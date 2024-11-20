@@ -1,0 +1,67 @@
+.competitive-end {
+  background-color: rgba(255, 255, 255, 1);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.competitive-end .div {
+  background-color: rgba(255, 255, 255, 1);
+  width: 1920px;
+  height: 1080px;
+  position: relative;
+}
+
+.competitive-end .text-wrapper {
+  position: absolute;
+  height: 592px;
+  top: 243px;
+  left: 240px;
+  font-family: "Londrina Solid", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 500px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.competitive-end .back-home-icon {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 30px;
+  left: 1790px;
+  background-image: url(https://c.animaapp.com/SWxnc944/img/image-1@2x.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+/* Shared hover styles */
+.hover-effect {
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation for scaling and shadow */
+  border-radius: 10px; /* Add rounded corners similar to the box */
+}
+
+.hover-effect:hover {
+  transform: scale(1.05); /* Slightly increase size on hover */
+  background-color: #ffcc00;
+}
+
+.red {
+  background: linear-gradient(
+    90deg,
+    rgb(255, 112.08, 112.08) 0%,
+    rgb(164.02, 0, 0) 100%
+  );
+}
+
+.blue {
+  background: linear-gradient(
+    90deg,
+    rgba(56.64, 213.89, 234.41, 0.91) 0%,
+    rgb(0, 84.05, 144.09) 100%
+  );
+}
