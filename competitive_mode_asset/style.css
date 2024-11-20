@@ -1,0 +1,1075 @@
+.competitive-play {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.competitive-play .div {
+  background-color: #ffffff;
+  width: 1920px;
+  height: 1080px;
+  position: relative;
+}
+
+.competitive-play .option-icon {
+  position: absolute;
+  width: 108px;
+  height: 108px;
+  top: 24px;
+  left: 1788px;
+  background-image: url(https://c.animaapp.com/cFUc2F07/img/image-3@2x.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.competitive-play .back-home-icon {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 30px;
+  left: 1570px;
+  background-image: url(https://c.animaapp.com/cFUc2F07/img/image-1@2x.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.competitive-play .thai-language-icon {
+  position: absolute;
+  width: 108px;
+  height: 108px;
+  top: 27px;
+  left: 1676px;
+  background-image: url(https://c.animaapp.com/cFUc2F07/img/image-2@2x.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.competitive-play .previous {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 32px;
+  left: 1460px;
+  background-image: url(https://c.animaapp.com/cFUc2F07/img/previous@2x.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.competitive-play .view {
+  position: absolute;
+  width: 162px;
+  height: 71px;
+  top: 45px;
+  left: 40px;
+}
+
+.competitive-play .overlap-group {
+  position: relative;
+  width: 160px;
+  height: 71px;
+  border-radius: 10px;
+  background: linear-gradient(
+    180deg,
+    rgb(255, 61.62, 61.62) 0%,
+    rgb(158.58, 0, 0) 100%
+  );
+}
+
+.competitive-play .text-wrapper {
+  width: 115px;
+  top: 14px;
+  left: 25px;
+  -webkit-text-stroke: 0px #000000;
+  font-size: 30px;
+  white-space: nowrap;
+  position: absolute;
+  font-family: 'Noto Sans Thai', sans-serif; /* Ensure correct font */
+  font-weight: 600;
+  color: #ffffff;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.competitive-play .overlap-wrapper {
+  position: absolute;
+  width: 162px;
+  height: 71px;
+  top: 45px;
+  left: 1172px;
+}
+
+.competitive-play .overlap {
+  position: relative;
+  width: 160px;
+  height: 71px;
+  border-radius: 10px;
+  background: linear-gradient(
+    180deg,
+    rgba(26.48, 181.79, 202.05, 0.91) 0%,
+    rgb(0, 40.66, 69.7) 100%
+  );
+}
+
+.competitive-play .text-wrapper-2 {
+  width: 137px;
+  top: 14px;
+  left: 15px;
+  -webkit-text-stroke: 0px #000000;
+  font-size: 30px;
+  white-space: nowrap;
+  position: absolute;
+  font-family: 'Noto Sans Thai', sans-serif; /* Ensure correct font */
+  font-weight: 600;
+  color: #ffffff;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.competitive-play .display-bar {
+  position: absolute;
+  width: 908px;
+  height: 90px;
+  top: 35px;
+  left: 232px;
+  border-radius: 10px;
+  background: linear-gradient(
+    180deg,
+    rgb(96.95, 96.95, 96.95) 0%,
+    rgb(52.44, 52.41, 52.41) 18.87%,
+    rgb(1.98, 1.91, 1.91) 100%
+  );
+}
+
+.competitive-play .overlap-2 {
+  position: absolute;
+  width: 167px;
+  height: 75px;
+  top: 8px;
+  left: 549px;
+  background-color: #b0b0b0;
+  border-radius: 8px;
+  border: 1px solid;
+  border-color: #575757;
+}
+
+.competitive-play .period-display {
+  width: 93px;
+  top: 16px;
+  left: 38px;
+  position: absolute;
+  height: 44px;
+}
+
+.competitive-play .period-name-wrapper {
+  width: 59px;
+  top: 0;
+  left: 0;
+  position: absolute;
+  height: 44px;
+}
+
+.competitive-play .text-wrapper-3 {
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  -webkit-text-stroke: 0px #000000;
+  font-family: 'Noto Sans Thai', sans-serif; /* Ensure correct font */
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 36px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.competitive-play .period-val {
+  position: absolute;
+  top: -4px;
+  left: 62px;
+  -webkit-text-stroke: 0px #000000;
+  font-family: 'Noto Sans Thai', sans-serif; /* Ensure correct font */
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 36px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.competitive-play .rectangle {
+  left: 4px;
+  background-color: #ff4800;
+  position: absolute;
+  width: 24px;
+  height: 14px;
+  top: 56px;
+  border-radius: 10px;
+}
+
+.competitive-play .rectangle-2 {
+  position: absolute;
+  width: 24px;
+  height: 14px;
+  top: 56px;
+  left: 139px;
+  background-color: #ed0000;
+  border-radius: 10px;
+}
+
+.competitive-play .overlap-3 {
+  position: absolute;
+  width: 167px;
+  height: 75px;
+  top: 8px;
+  left: 729px;
+  background-color: #b0b0b0;
+  border-radius: 8px;
+  border: 1px solid;
+  border-color: #575757;
+}
+
+.competitive-play .vel-display {
+  width: 89px;
+  top: 16px;
+  left: 38px;
+  position: absolute;
+  height: 44px;
+}
+
+.competitive-play .vel-name-wrapper {
+  width: 56px;
+  top: 0;
+  left: 0;
+  position: absolute;
+  height: 44px;
+}
+
+.competitive-play .vel-val {
+  position: absolute;
+  top: -4px;
+  left: 58px;
+  -webkit-text-stroke: 0px #000000;
+  font-family: 'Noto Sans Thai', sans-serif; /* Ensure correct font */
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 36px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.competitive-play .div-2 {
+  left: 3px;
+  background-color: #ff4800;
+  position: absolute;
+  width: 24px;
+  height: 14px;
+  top: 56px;
+  border-radius: 10px;
+}
+
+.competitive-play .div-3 {
+  left: 138px;
+  background-color: #ed0000;
+  position: absolute;
+  width: 24px;
+  height: 14px;
+  top: 56px;
+  border-radius: 10px;
+}
+
+.competitive-play .amplitude-display {
+  position: absolute;
+  width: 167px;
+  height: 75px;
+  top: 8px;
+  left: 10px;
+  background-color: #b0b0b0;
+  border-radius: 8px;
+  border: 1px solid;
+  border-color: #575757;
+}
+
+.competitive-play .amplitude-display-2 {
+  position: absolute;
+  width: 97px;
+  height: 44px;
+  top: 14px;
+  left: 35px;
+}
+
+.competitive-play .amplitude-name-wrapper {
+  position: absolute;
+  width: 62px;
+  height: 44px;
+  top: 0;
+  left: 0;
+}
+
+.competitive-play .amplitude-val {
+  position: absolute;
+  top: -4px;
+  left: 66px;
+  -webkit-text-stroke: 0px #000000;
+  font-family: 'Noto Sans Thai', sans-serif; /* Ensure correct font */
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 36px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.competitive-play .lambda-display {
+  position: absolute;
+  width: 167px;
+  height: 75px;
+  top: 8px;
+  left: 190px;
+  background-color: #b0b0b0;
+  border-radius: 8px;
+  border: 1px solid;
+  border-color: #575757;
+}
+
+.competitive-play .div-4 {
+  position: absolute;
+  width: 24px;
+  height: 14px;
+  top: 56px;
+  left: 137px;
+  background-color: #ed0000;
+  border-radius: 10px;
+}
+
+.competitive-play .lambda-display-2 {
+  position: absolute;
+  width: 91px;
+  height: 46px;
+  top: 12px;
+  left: 37px;
+}
+
+.competitive-play .group {
+  position: absolute;
+  width: 60px;
+  height: 46px;
+  top: 0;
+  left: 34px;
+}
+
+.competitive-play .lambda-display-wrapper {
+  position: absolute;
+  width: 25px;
+  height: 44px;
+  top: 0;
+  left: 0;
+}
+
+.competitive-play .lambda-name-wrapper {
+  position: relative;
+  width: 27px;
+  height: 44px;
+  color: #ffffff;
+}
+
+.competitive-play .text-wrapper-4 {
+  position: absolute;
+  top: -2px;
+  left: 29px;
+  -webkit-text-stroke: 0px #000000;
+  font-family: 'Noto Sans Thai', sans-serif; /* Ensure correct font */
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 36px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.competitive-play .lambda-display-3 {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 9px;
+  left: 0;
+  background-image: url(https://c.animaapp.com/cFUc2F07/img/lambda@2x.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.competitive-play .f-display {
+  position: absolute;
+  width: 167px;
+  height: 75px;
+  top: 8px;
+  left: 370px;
+  background-color: #b0b0b0;
+  border-radius: 8px;
+  border: 1px solid;
+  border-color: #575757;
+}
+
+.competitive-play .f-display-2 {
+  position: absolute;
+  width: 83px;
+  height: 44px;
+  top: 14px;
+  left: 46px;
+}
+
+.competitive-play .f-name-wrapper {
+  position: absolute;
+  width: 49px;
+  height: 44px;
+  top: 0;
+  left: 0;
+}
+
+.competitive-play .f-val {
+  position: absolute;
+  top: -4px;
+  left: 52px;
+  -webkit-text-stroke: 0px #000000;
+  font-family: 'Noto Sans Thai', sans-serif; /* Ensure correct font */
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 36px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.competitive-play .overlap-4 {
+  position: absolute;
+  width: 1795px;
+  height: 911px;
+  top: 154px;
+  left: 40px;
+}
+
+.competitive-play .overlap-group-wrapper {
+  position: absolute;
+  width: 209px;
+  height: 98px;
+  top: 800px;
+  left: 0;
+}
+
+.competitive-play .overlap-5 {
+  position: relative;
+  height: 96px;
+}
+
+.competitive-play .enter-button {
+  width: 146px;
+  top: 20px;
+  position: absolute;
+  height: 76px;
+  left: 0;
+  background-color: #2f2f2f;
+  border-radius: 15px;
+}
+
+.competitive-play .sign-icon {
+  width: 98px;
+  height: 50px;
+  left: 111px;
+  position: absolute;
+  top: 0;
+  background-color: #606060;
+  border-radius: 60px;
+}
+
+.competitive-play .rotate-icon {
+  width: 40px;
+  height: 40px;
+  top: 5px;
+  left: 52px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.competitive-play .push-icon {
+  position: absolute;
+  width: 41px;
+  height: 40px;
+  top: 5px;
+  left: 6px;
+  object-fit: cover;
+}
+
+.competitive-play .text-wrapper-5 {
+  width: 70%; /* Use full width to center properly */
+  top: 32px;
+  left: 0; /* Align to the parent container */
+  font-size: 35px;
+  white-space: nowrap;
+  position: absolute;
+  font-family: 'Noto Sans Thai', sans-serif; /* Ensure correct font */
+  font-weight: 600;
+  color: #ffffff;
+  letter-spacing: 0;
+  line-height: normal;
+  text-align: center; /* Center-align the text */
+  -webkit-text-stroke: none; /* Remove text stroke */
+}
+
+.competitive-play .div-wrapper {
+  position: absolute;
+  width: 222px;
+  height: 105px;
+  top: 800px;
+  left: 243px;
+}
+
+.competitive-play .overlap-6 {
+  position: relative;
+  width: 244px;
+  height: 99px;
+}
+
+.competitive-play .enter-button-2 {
+  width: 218px;
+  top: 23px;
+  position: absolute;
+  height: 76px;
+  left: 0;
+  background-color: #2f2f2f;
+  border-radius: 15px;
+}
+
+.competitive-play .rotate-icon-wrapper {
+  width: 55px;
+  height: 54px;
+  left: 189px;
+  position: absolute;
+  top: 0;
+  background-color: #606060;
+  border-radius: 60px;
+}
+
+.competitive-play .img {
+  width: 43px;
+  height: 42px;
+  top: 5px;
+  left: 6px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.competitive-play .text-wrapper-6 {
+  width: 90%; /* Use full width to center properly */
+  top: 35px;
+  left: 0; /* Align to the parent container */
+  font-size: 35px;
+  white-space: nowrap;
+  position: absolute;
+  font-family: 'Noto Sans Thai', sans-serif; /* Ensure correct font */
+  font-weight: 600;
+  color: #ffffff;
+  letter-spacing: 0;
+  line-height: normal;
+  text-align: center; /* Center-align the text */
+  -webkit-text-stroke: none; /* Remove text stroke */
+}
+
+.competitive-play .overlap-7 {
+  position: absolute;
+  width: 1741px;
+  height: 911px;
+  top: 0;
+  left: 54px;
+}
+
+.competitive-play .view-2 {
+  position: absolute;
+  width: 184px;
+  height: 103px;
+  top: 798px;
+  left: 774px;
+}
+
+.competitive-play .overlap-8 {
+  position: relative;
+  height: 98px;
+}
+
+.competitive-play .enter-button-3 {
+  width: 158px;
+  top: 22px;
+  position: absolute;
+  height: 76px;
+  left: 0;
+  background-color: #2f2f2f;
+  border-radius: 15px;
+}
+
+.competitive-play .img-wrapper {
+  width: 53px;
+  height: 53px;
+  left: 131px;
+  position: absolute;
+  top: 0;
+  background-color: #606060;
+  border-radius: 60px;
+}
+
+.competitive-play .rotate-icon-2 {
+  width: 42px;
+  height: 42px;
+  top: 5px;
+  left: 6px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.competitive-play .text-wrapper-7 {
+  width: 85%; /* Use full width to center properly */
+  top: 35px;
+  left: 0; /* Align to the parent container */
+  font-size: 35px;
+  white-space: nowrap;
+  position: absolute;
+  font-family: 'Noto Sans Thai', sans-serif; /* Ensure correct font */
+  font-weight: 600;
+  color: #ffffff;
+  letter-spacing: 0;
+  line-height: normal;
+  text-align: center; /* Center-align the text */
+  -webkit-text-stroke: none; /* Remove text stroke */
+}
+
+.competitive-play .view-3 {
+  position: absolute;
+  width: 159px;
+  height: 115px;
+  top: 796px;
+  left: 1063px;
+}
+
+.competitive-play .overlap-9 {
+  position: relative;
+  height: 101px;
+}
+
+.competitive-play .enter-button-4 {
+  width: 129px;
+  top: 25px;
+  position: absolute;
+  height: 76px;
+  left: 0;
+  background-color: #2f2f2f;
+  border-radius: 15px;
+}
+
+.competitive-play .sign-icon-2 {
+  width: 60px;
+  height: 59px;
+  left: 99px;
+  position: absolute;
+  top: 0;
+  background-color: #606060;
+  border-radius: 60px;
+}
+
+.competitive-play .rotate-icon-3 {
+  width: 47px;
+  height: 47px;
+  top: 6px;
+  left: 6px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.competitive-play .text-wrapper-8 {
+  width: 82%; /* Use full width to center properly */
+  top: 35px;
+  left: 0; /* Align to the parent container */
+  font-size: 35px;
+  white-space: nowrap;
+  position: absolute;
+  font-family: 'Noto Sans Thai', sans-serif; /* Ensure correct font */
+  font-weight: 600;
+  color: #ffffff;
+  letter-spacing: 0;
+  line-height: normal;
+  text-align: center; /* Center-align the text */
+  -webkit-text-stroke: none; /* Remove text stroke */
+}
+
+.competitive-play .view-4 {
+  position: absolute;
+  width: 244px;
+  height: 115px;
+  top: 796px;
+  left: 1267px;
+}
+
+.competitive-play .overlap-10 {
+  position: relative;
+  width: 283px;
+  height: 101px;
+}
+
+.competitive-play .enter-button-5 {
+  width: 251px;
+  top: 25px;
+  box-shadow: 0px 4px 4px #00000040;
+  position: absolute;
+  height: 76px;
+  left: 0;
+  background-color: #2f2f2f;
+  border-radius: 15px;
+}
+
+.competitive-play .sign-icon-3 {
+  width: 60px;
+  height: 59px;
+  left: 223px;
+  position: absolute;
+  top: 0;
+  background-color: #606060;
+  border-radius: 60px;
+}
+
+.competitive-play .text-wrapper-9 {
+  width: 90%; /* Use full width to center properly */
+  top: 37px;
+  left: 0; /* Align to the parent container */
+  font-size: 35px;
+  white-space: nowrap;
+  position: absolute;
+  font-family: 'Noto Sans Thai', sans-serif; /* Ensure correct font */
+  font-weight: 600;
+  color: #ffffff;
+  letter-spacing: 0;
+  line-height: normal;
+  text-align: center; /* Center-align the text */
+  -webkit-text-stroke: none; /* Remove text stroke */
+}
+
+.competitive-play .graph-line {
+  position: absolute;
+  width: 1741px;
+  height: 800px;
+  top: 0;
+  left: 0;
+}
+
+.competitive-play .overlap-11 {
+  position: relative;
+  height: 800px;
+}
+
+.competitive-play .horizontal {
+  position: absolute;
+  width: 1731px;
+  height: 29px;
+  top: 386px;
+  left: 10px;
+}
+
+.competitive-play .vertical-line {
+  position: absolute;
+  width: 1640px;
+  height: 20px;
+  top: 388px;
+  left: 52px;
+}
+
+.competitive-play .vertical-ticks-pos {
+  height: 320px;
+  top: -150px;
+  left: 150px;
+  transform: rotate(-90deg);
+  position: absolute;
+  width: 20px;
+}
+
+.competitive-play .line {
+  position: absolute;
+  width: 4px;
+  height: 20px;
+  top: 308px;
+  left: 8px;
+  transform: rotate(90deg);
+}
+
+.competitive-play .line-2 {
+  position: absolute;
+  width: 4px;
+  height: 20px;
+  top: 268px;
+  left: 8px;
+  transform: rotate(90deg);
+}
+
+.competitive-play .line-3 {
+  position: absolute;
+  width: 4px;
+  height: 20px;
+  top: 228px;
+  left: 8px;
+  transform: rotate(90deg);
+}
+
+.competitive-play .line-4 {
+  position: absolute;
+  width: 4px;
+  height: 20px;
+  top: 188px;
+  left: 8px;
+  transform: rotate(90deg);
+}
+
+.competitive-play .line-5 {
+  position: absolute;
+  width: 4px;
+  height: 20px;
+  top: 108px;
+  left: 8px;
+  transform: rotate(90deg);
+}
+
+.competitive-play .line-6 {
+  position: absolute;
+  width: 4px;
+  height: 20px;
+  top: 28px;
+  left: 8px;
+  transform: rotate(90deg);
+}
+
+.competitive-play .line-7 {
+  position: absolute;
+  width: 4px;
+  height: 20px;
+  top: -12px;
+  left: 8px;
+  transform: rotate(90deg);
+}
+
+.competitive-play .line-8 {
+  position: absolute;
+  width: 4px;
+  height: 20px;
+  top: 68px;
+  left: 8px;
+  transform: rotate(90deg);
+}
+
+.competitive-play .line-9 {
+  position: absolute;
+  width: 4px;
+  height: 20px;
+  top: 148px;
+  left: 8px;
+  transform: rotate(90deg);
+}
+
+.competitive-play .vertical-ticks-pos-2 {
+  height: 320px;
+  top: -150px;
+  left: 510px;
+  transform: rotate(-90deg);
+  position: absolute;
+  width: 20px;
+}
+
+.competitive-play .vertical-ticks-pos-3 {
+  height: 920px;
+  top: -450px;
+  left: 1170px;
+  transform: rotate(-90deg);
+  position: absolute;
+  width: 20px;
+}
+
+.competitive-play .vertical-ticks-pos-4 {
+  height: 320px;
+  top: 360px;
+  left: 0;
+  position: absolute;
+  width: 20px;
+}
+
+.competitive-play .vertical-ticks-pos-5 {
+  height: 200px;
+  top: 720px;
+  left: 0;
+  position: absolute;
+  width: 20px;
+}
+
+.competitive-play .horizontal-line {
+  position: absolute;
+  width: 20px;
+  height: 800px;
+  top: 0;
+  left: 0;
+}
+
+.competitive-play .overlap-group-2 {
+  position: relative;
+  width: 30px;
+  height: 800px;
+  left: -5px;
+  background-image: url(https://c.animaapp.com/cFUc2F07/img/horizontal-1.svg);
+  background-size: 100% 100%;
+}
+
+.competitive-play .horizontal-ticks-pos {
+  position: absolute;
+  width: 20px;
+  height: 320px;
+  top: 40px;
+  left: 5px;
+}
+
+.competitive-play .line-10 {
+  position: absolute;
+  width: 20px;
+  height: 4px;
+  top: 316px;
+  left: 0;
+}
+
+.competitive-play .line-11 {
+  position: absolute;
+  width: 20px;
+  height: 4px;
+  top: 276px;
+  left: 0;
+}
+
+.competitive-play .line-12 {
+  position: absolute;
+  width: 20px;
+  height: 4px;
+  top: 236px;
+  left: 0;
+}
+
+.competitive-play .line-13 {
+  position: absolute;
+  width: 20px;
+  height: 4px;
+  top: 196px;
+  left: 0;
+}
+
+.competitive-play .line-14 {
+  position: absolute;
+  width: 20px;
+  height: 4px;
+  top: 116px;
+  left: 0;
+}
+
+.competitive-play .line-15 {
+  top: 36px;
+  position: absolute;
+  width: 20px;
+  height: 4px;
+  left: 0;
+}
+
+.competitive-play .line-16 {
+  top: -4px;
+  position: absolute;
+  width: 20px;
+  height: 4px;
+  left: 0;
+}
+
+.competitive-play .line-17 {
+  position: absolute;
+  width: 20px;
+  height: 4px;
+  top: 76px;
+  left: 0;
+}
+
+.competitive-play .line-18 {
+  position: absolute;
+  width: 20px;
+  height: 4px;
+  top: 156px;
+  left: 0;
+}
+
+.competitive-play .horizontal-ticks-neg {
+  position: absolute;
+  width: 20px;
+  height: 320px;
+  top: 440px;
+  left: 5px;
+}
+
+.competitive-play .view-5 {
+  position: absolute;
+  width: 222px;
+  height: 105px;
+  top: 800px;
+  left: 498px;
+}
+
+.competitive-play .overlap-12 {
+  position: relative;
+  width: 288px;
+  height: 99px;
+}
+
+.competitive-play .enter-button-6 {
+  width: 264px;
+  top: 23px;
+  position: absolute;
+  height: 76px;
+  left: 0;
+  background-color: #2f2f2f;
+  border-radius: 15px;
+}
+
+.competitive-play .sign-icon-4 {
+  width: 55px;
+  height: 54px;
+  left: 234px;
+  position: absolute;
+  top: 0;
+  background-color: #606060;
+  border-radius: 60px;
+}
+
+.competitive-play .text-wrapper-10 {
+  width: 92%; /* Use full width to center properly */
+  top: 35px;
+  left: 0; /* Align to the parent container */
+  font-size: 35px;
+  white-space: nowrap;
+  position: absolute;
+  font-family: 'Noto Sans Thai', sans-serif; /* Ensure correct font */
+  font-weight: 600;
+  color: #ffffff;
+  letter-spacing: 0;
+  line-height: normal;
+  text-align: center; /* Center-align the text */
+  -webkit-text-stroke: none; /* Remove text stroke */
+}
+
+.competitive-play .ellipse {
+  position: absolute;
+  width: 53px;
+  height: 53px;
+  top: 999px;
+  left: 1847px;
+  background-color: #d9d9d9;
+  border-radius: 26.44px / 26.58px;
+}
+
+/* Shared hover styles */
+.hover-effect {
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation for scaling and shadow */
+  border-radius: 10px; /* Add rounded corners similar to the box */
+}
+
+.hover-effect:hover {
+  transform: scale(1.05); /* Slightly increase size on hover */
+  background-color: #ffcc00;
+}
