@@ -1,0 +1,249 @@
+.home-page {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .home-page .div {
+    background-color: #ffffff;
+    width: 1920px;
+    height: 1080px;
+    position: relative;
+  }
+  
+  .home-page .box {
+    width: 430px;
+    left: 200px;
+    background-image: url(https://c.animaapp.com/9a5NSbPb/img/---------------.svg);
+    position: absolute;
+    height: 600px;
+    top: 240px;
+    background-size: 100% 100%;
+  }
+  
+  .home-page .text-wrapper {
+    width: 383px;
+    top: 38px;
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Offset to center the text */
+    font-size: 57px;
+    position: absolute;
+    font-family: 'Noto Sans Thai', sans-serif; /* Updated font */
+    font-weight: 600;
+    color: #ffffff; /* Adjust color if needed */
+    letter-spacing: 0;
+    line-height: normal;
+    text-align: center; /* Ensure text aligns centrally */
+  }
+  
+  .home-page .icon {
+    width: 350px;
+    top: 170px;
+    left: 20px;
+    position: absolute;
+    height: 350px;
+    object-fit: cover;
+  }
+  
+  .home-page .box-2 {
+    width: 425px;
+    left: 1290px;
+    background-image: url(https://c.animaapp.com/9a5NSbPb/img/----------------1.svg);
+    position: absolute;
+    height: 600px;
+    top: 240px;
+    background-size: 100% 100%;
+  }
+  
+  .home-page .text-wrapper-2 {
+    width: 383px;
+    top: 38px;
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Offset to center the text */
+    font-size: 57px;
+    position: absolute;
+    font-family: 'Noto Sans Thai', sans-serif; /* Updated font */
+    font-weight: 600;
+    color: #ffffff; /* Adjust color if needed */
+    letter-spacing: 0;
+    line-height: normal;
+    text-align: center; /* Ensure text aligns centrally */
+  }
+  
+  .home-page .img {
+    width: 350px;
+    top: 160px;
+    left: 38px;
+    position: absolute;
+    height: 350px;
+    object-fit: cover;
+  }
+  
+  .home-page .view {
+    position: absolute;
+    width: 209px;
+    height: 98px;
+    top: 955px;
+    left: 41px;
+  }
+  
+  .home-page .overlap-group {
+    position: relative;
+    height: 96px;
+  }
+  
+  .home-page .enter-button {
+    position: absolute;
+    width: 146px;
+    height: 76px;
+    top: 20px;
+    left: 0;
+    background-color: #2f2f2f;
+    border-radius: 15px;
+  }
+  
+  .home-page .sign-icon {
+    position: absolute;
+    width: 98px;
+    height: 50px;
+    top: 0;
+    left: 111px;
+    background-color: #606060;
+    border-radius: 60px;
+  }
+  
+  .home-page .rotate-icon {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 5px;
+    left: 52px;
+    object-fit: cover;
+  }
+  
+  .home-page .push-icon {
+    position: absolute;
+    width: 41px;
+    height: 40px;
+    top: 5px;
+    left: 6px;
+    object-fit: cover;
+  }
+  
+  .home-page .text-wrapper-3 {
+    width: 70%; /* Use full width to center properly */
+    top: 32px;
+    left: 0; /* Align to the parent container */
+    font-size: 35px;
+    white-space: nowrap;
+    position: absolute;
+    font-family: 'Noto Sans Thai', sans-serif; /* Ensure correct font */
+    font-weight: 600;
+    color: #ffffff;
+    letter-spacing: 0;
+    line-height: normal;
+    text-align: center; /* Center-align the text */
+    -webkit-text-stroke: none; /* Remove text stroke */
+}
+
+  .home-page .box-3 {
+    width: 430px;
+    left: 745px;
+    background-image: url(https://c.animaapp.com/9a5NSbPb/img/--------------.svg);
+    position: absolute;
+    height: 600px;
+    top: 240px;
+    background-size: 100% 100%;
+  }
+  
+  .home-page .text-wrapper-4 {
+    width: 383px;
+    top: 38px;
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Offset to center the text */
+    font-size: 57px;
+    position: absolute;
+    font-family: 'Noto Sans Thai', sans-serif; /* Updated font */
+    font-weight: 600;
+    color: #ffffff; /* Adjust color if needed */
+    letter-spacing: 0;
+    line-height: normal;
+    text-align: center; /* Ensure text aligns centrally */
+  }
+  
+  .home-page .icon-2 {
+    width: 342px;
+    top: 170px;
+    left: 44px;
+    position: absolute;
+    height: 350px;
+    object-fit: cover;
+  }
+  
+  .home-page .back-home-icon {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 30px;
+    left: 1570px;
+    background-image: url(https://c.animaapp.com/9a5NSbPb/img/back-home-icon@2x.png);
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  
+  .home-page .thai-language-icon {
+    position: absolute;
+    width: 108px;
+    height: 108px;
+    top: 26px;
+    left: 1677px;
+    background-image: url(https://c.animaapp.com/9a5NSbPb/img/thai-language-icon@2x.png);
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  
+  .home-page .option-icon {
+    position: absolute;
+    width: 108px;
+    height: 108px;
+    top: 24px;
+    left: 1788px;
+    background-image: url(https://c.animaapp.com/9a5NSbPb/img/option-icon@2x.png);
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+
+.box {
+  border-radius: 15; 
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.box-2 {
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.box-2:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.box-3 {
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.box-3:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
