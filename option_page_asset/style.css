@@ -1,0 +1,414 @@
+.option-page {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.option-page .div {
+  background-color: #ffffff;
+  width: 1920px;
+  height: 1080px;
+  position: relative;
+}
+
+.option-page .overlap {
+  position: absolute;
+  width: 1250px;
+  height: 670px;
+  top: 180px;
+  left: 340px;
+}
+
+.option-page .display-option {
+  position: absolute;
+  width: 1250px;
+  height: 670px;
+  top: 0;
+  left: 0;
+}
+
+.option-page .overlap-group {
+  position: relative;
+  width: 1240px;
+  height: 670px;
+  border-radius: 25px;
+  background: linear-gradient(
+    180deg,
+    rgb(47.16, 47.16, 47.16) 0%,
+    rgb(3.31, 3.31, 3.31) 100%
+  );
+}
+
+.option-page .overlap-2 {
+  position: absolute;
+  width: 1160px;
+  height: 160px;
+  top: 215px;
+  left: 40px;
+  background-color: #aaaaaa;
+  border-radius: 20px;
+}
+
+.option-page .text-wrapper {
+  width: 168px;
+  top: 44px;
+  left: 130px;
+  font-size: 57px;
+  position: absolute;
+  -webkit-text-stroke: 0px #000000;
+  font-family: 'Noto Sans Thai', sans-serif;
+  font-weight: 600;
+  color: #ffffff;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.option-page .text-wrapper-2 {
+  width: 168px;
+  top: 44px;
+  left: 786px;
+  font-size: 57px;
+  position: absolute;
+  -webkit-text-stroke: 0px #000000;
+  font-family: 'Noto Sans Thai', sans-serif;
+  font-weight: 600;
+  color: #ffffff;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.option-page .div-wrapper {
+  position: absolute;
+  width: 108px;
+  height: 90px;
+  top: 30px;
+  left: 482px;
+}
+
+.option-page .text-wrapper-3 {
+  position: absolute;
+  width: 100%; /* Make it span the full width of the parent */
+  height: 125%; /* Make it span the full height of the parent */
+  top: 0; /* Align to the top of the parent */
+  left: 0; /* Align to the left of the parent */
+  font-size: 80px;
+  font-family: 'Noto Sans Thai', sans-serif;
+  font-weight: 600;
+  color: #ffffff;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+  display: flex; /* Enable flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  -webkit-text-stroke: 0px; /* No text stroke */
+}
+
+
+.option-page .plus-button-number {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 30px;
+  left: 350px;
+  /* box-shadow: 0px 4px 4px #00000080; */
+  background-image: url(https://c.animaapp.com/B7dOcxyl/img/image-5@2x.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.option-page .div-2 {
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  top: 25px;
+  left: 616px;
+  /* box-shadow: 0px 4px 4px #00000080; */
+  background-image: url(https://c.animaapp.com/B7dOcxyl/img/minus-button-2@2x.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.option-page .overlap-3 {
+  position: absolute;
+  width: 1160px;
+  height: 160px;
+  top: 430px;
+  left: 40px;
+  background-color: #aaaaaa;
+  border-radius: 20px;
+}
+
+.option-page .text-wrapper-4 {
+  width: 108px;
+  top: 44px;
+  left: 160px;
+  font-size: 57px;
+  position: absolute;
+  -webkit-text-stroke: 0px #000000;
+  font-family: 'Noto Sans Thai', sans-serif;
+  font-weight: 600;
+  color: #ffffff;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.option-page .text-wrapper-5 {
+  width: 108px;
+  top: 44px;
+  left: 816px;
+  font-size: 57px;
+  position: absolute;
+  -webkit-text-stroke: 0px #000000;
+  font-family: 'Noto Sans Thai', sans-serif;
+  font-weight: 600;
+  color: #ffffff;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.option-page .plus-button-time {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 30px;
+  left: 350px;
+  /* box-shadow: 0px 4px 4px #00000080; */
+  background-image: url(https://c.animaapp.com/B7dOcxyl/img/image-6@2x.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.option-page .text-wrapper-6 {
+  width: 613px;
+  top: 28px;
+  left: 327px;
+  font-size: 57px;
+  position: absolute;
+  -webkit-text-stroke: 0px #000000;
+  font-family: 'Noto Sans Thai', sans-serif;
+  font-weight: 600;
+  color: #ffffff;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.option-page .option-number {
+  position: absolute;
+  width: 149px;
+  height: 90px;
+  top: 250px;
+  left: 1021px;
+  border-radius: 15px;
+  background: linear-gradient(
+    180deg,
+    rgb(86.27, 11.86, 13.1) 0%,
+    rgb(226.44, 49.07, 52.03) 100%
+  );
+}
+
+.option-page .text-wrapper-7 {
+  width: 100%; /* Full width of the parent */
+  height: 100%; /* Full height of the parent */
+  top: 0; /* Align to the top of the parent */
+  left: 0; /* Align to the left of the parent */
+  font-size: 40px;
+  position: absolute;
+  font-family: 'Noto Sans Thai', sans-serif;
+  font-weight: 600;
+  color: #ffffff;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+  display: flex; /* Enable flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  -webkit-text-stroke: 0px; /* No text stroke */
+}
+
+
+.option-page .option-time {
+  position: absolute;
+  width: 149px;
+  height: 90px;
+  top: 465px;
+  left: 1021px;
+  border-radius: 15px;
+  background: linear-gradient(
+    180deg,
+    rgb(86.27, 11.86, 13.1) 0%,
+    rgb(226.44, 49.07, 52.03) 100%
+  );
+}
+
+.option-page .back-home-icon {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 30px;
+  left: 1570px;
+  background-image: url(https://c.animaapp.com/B7dOcxyl/img/back-home-icon@2x.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.option-page .thai-language-icon {
+  position: absolute;
+  width: 108px;
+  height: 108px;
+  top: 26px;
+  left: 1677px;
+  background-image: url(https://c.animaapp.com/B7dOcxyl/img/thai-language-icon@2x.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.option-page .option-icon {
+  position: absolute;
+  width: 108px;
+  height: 108px;
+  top: 23px;
+  left: 1788px;
+  background-image: url(https://c.animaapp.com/B7dOcxyl/img/option-icon@2x.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.option-page .previous {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 30px;
+  left: 1460px;
+  background-image: url(https://c.animaapp.com/B7dOcxyl/img/previous@2x.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.option-page .option {
+  position: absolute;
+  width: 149px;
+  height: 90px;
+  top: 870px;
+  left: 1431px;
+  border-radius: 15px;
+  background: linear-gradient(
+    180deg,
+    rgb(11.86, 86.27, 71.39) 0%,
+    rgb(0, 180.4, 78.17) 100%
+  );
+}
+
+.option-page .text-wrapper-8 {
+  width: 100%; /* Full width of the parent */
+  height: 100%; /* Full height of the parent */
+  top: 0; /* Align to the top of the parent */
+  left: 0; /* Align to the left of the parent */
+  font-size: 35px;
+  position: absolute;
+  font-family: 'Noto Sans Thai', sans-serif;
+  font-weight: 600;
+  color: #ffffff;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+  display: flex; /* Enable flexbox for alignment */
+  justify-content: center; /* Center text horizontally */
+  align-items: center; /* Center text vertically */
+  -webkit-text-stroke: 0px; /* Remove text stroke */
+}
+
+
+.option-page .view {
+  position: absolute;
+  width: 209px;
+  height: 98px;
+  top: 955px;
+  left: 40px;
+}
+
+.option-page .overlap-4 {
+  position: relative;
+  height: 96px;
+}
+
+.option-page .enter-button {
+  position: absolute;
+  width: 146px;
+  height: 76px;
+  top: 20px;
+  left: 0;
+  background-color: #2f2f2f;
+  border-radius: 15px;
+}
+
+.option-page .sign-icon {
+  position: absolute;
+  width: 98px;
+  height: 50px;
+  top: 0;
+  left: 111px;
+  background-color: #606060;
+  border-radius: 60px;
+}
+
+.option-page .rotate-icon {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 5px;
+  left: 52px;
+  object-fit: cover;
+}
+
+.option-page .push-icon {
+  position: absolute;
+  width: 41px;
+  height: 40px;
+  top: 5px;
+  left: 6px;
+  object-fit: cover;
+}
+
+.option-page .text-wrapper-9 {
+  width: 70%; /* Use full width to center properly */
+  top: 32px;
+  left: 0; /* Align to the parent container */
+  font-size: 35px;
+  white-space: nowrap;
+  position: absolute;
+  font-family: 'Noto Sans Thai', sans-serif; /* Ensure correct font */
+  font-weight: 600;
+  color: #ffffff;
+  letter-spacing: 0;
+  line-height: normal;
+  text-align: center; /* Center-align the text */
+  -webkit-text-stroke: none; /* Remove text stroke */
+}
+
+/* Shared hover styles */
+.hover-effect {
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation for scaling and shadow */
+  border-radius: 10px; /* Add rounded corners similar to the box */
+}
+
+.hover-effect:hover {
+  transform: scale(1.05); /* Slightly increase size on hover */
+  background-color: #ffcc00;
+}
+
+/* Specific styles for individual elements */
+.plus-button-number, 
+.div-2, 
+.plus-button-time, 
+.option-number, 
+.option-time, 
+.option, 
+.back-home-icon, 
+.previous {
+  /* Add the shared hover effect */
+  border-radius: 15px; /* Ensure rounded corners */
+  overflow: hidden; /* Prevent content overflow */
+}
