@@ -1,0 +1,33 @@
+:root {
+  --parameters-variables-amplitude-val: 0px;
+  --parameters-variables-question-number: 30px;
+  --parameters-variables-time: 30px;
+  --parameters-variables-lambda-val: 0px;
+  --parameters-variables-f-val: 0px;
+  --parameters-variables-period-val: 0px;
+  --parameters-variables-velocity-val: 0px;
+  --parameters-variables-score-red: 0px;
+  --parameters-variables-score-blue: 0px;
+  --parameters-variables-number-question-past: 0px;
+  --parameters-variables-theta-val: 0px;
+  --parameters-variables-x-val: 0px;
+  --parameters-variables-f-reflec-val: 0px;
+  --parameters-variables-period-reflec-val: 0px;
+  --parameters-variables-vel-reflec-val: 0px;
+  --parameters-variables-d-int-val: 0px;
+  --parameters-variables-n-int-val: 0px;
+  --parameters-variables-l-int-val: 0px;
+  --parameters-variables-f-int-val: 0px;
+  --parameters-variables-v-int-val: 0px;
+  --parameters-variables-amp-ana-val: 0px;
+  --parameters-variables-lampda-ana-val: 0px;
+  --parameters-variables-period-ana-val: 0px;
+  --parameters-variables-f-ana-val: 0px;
+  --parameters-variables-v-ana-val: 0px;
+  --parameters-variables-n1-refraction-val: 0px;
+  --parameters-variables-n2-refraction-val: 0px;
+  --parameters-variables-theta1-refraction-val: 0px;
+  --parameters-variables-theta2-refraction-val: 0px;
+  --parameters-variables-lampda1-refraction-val: 0px;
+  --parameters-variables-lampda2-refraction-val: 0px;
+}

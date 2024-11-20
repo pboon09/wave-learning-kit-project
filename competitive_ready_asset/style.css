@@ -1,0 +1,281 @@
+.competitive-ready {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.competitive-ready .div {
+  background-color: #ffffff;
+  width: 1920px;
+  height: 1080px;
+  position: relative;
+}
+
+.competitive-ready .text-wrapper {
+  width: 403px;
+  top: 168px;
+  left: 752px;
+  -webkit-text-stroke: 0px #000000;
+  color: #000;
+  font-size: 57px;
+  position: absolute;
+  font-family: 'Noto Sans Thai', sans-serif; /* Ensure correct font */
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.competitive-ready .view {
+  position: absolute;
+  width: 209px;
+  height: 98px;
+  top: 955px;
+  left: 40px;
+}
+
+.competitive-ready .overlap-group {
+  position: relative;
+  height: 96px;
+}
+
+.competitive-ready .enter-button {
+  position: absolute;
+  width: 146px;
+  height: 76px;
+  top: 20px;
+  left: 0;
+  background-color: #2f2f2f;
+  border-radius: 15px;
+}
+
+.competitive-ready .sign-icon {
+  position: absolute;
+  width: 98px;
+  height: 50px;
+  top: 0;
+  left: 111px;
+  background-color: #606060;
+  border-radius: 60px;
+}
+
+.competitive-ready .rotate-icon {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 5px;
+  left: 52px;
+  object-fit: cover;
+}
+
+.competitive-ready .push-icon {
+  position: absolute;
+  width: 41px;
+  height: 40px;
+  top: 5px;
+  left: 6px;
+  object-fit: cover;
+}
+
+.competitive-ready .text-wrapper-2 {
+  width: 70%; /* Use full width to center properly */
+  top: 32px;
+  left: 0; /* Align to the parent container */
+  font-size: 35px;
+  white-space: nowrap;
+  position: absolute;
+  font-family: 'Noto Sans Thai', sans-serif; /* Ensure correct font */
+  font-weight: 600;
+  color: #ffffff;
+  letter-spacing: 0;
+  line-height: normal;
+  text-align: center; /* Center-align the text */
+  -webkit-text-stroke: none; /* Remove text stroke */
+}
+
+.competitive-ready .element {
+  position: absolute;
+  width: 460px;
+  height: 620px;
+  top: 290px;
+  left: 1150px;
+}
+
+.competitive-ready .game-console-player {
+  position: absolute;
+  width: 460px;
+  height: 360px;
+  top: 0;
+  left: 0;
+}
+
+.competitive-ready .text-wrapper-3 {
+  width: 285px;
+  top: 543px;
+  left: 83px;
+  -webkit-text-stroke: 0px #990000;
+  color: #000;
+  font-size: 57px;
+  position: absolute;
+  font-family: 'Noto Sans Thai', sans-serif; /* Ensure correct font */
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.competitive-ready .text-wrapper-4 {
+  width: 262px;
+  top: 453px;
+  left: 93px;
+  -webkit-text-stroke: 0px #002845;
+  color: #52bdff;
+  font-size: 57px;
+  position: absolute;
+  font-family: 'Noto Sans Thai', sans-serif; /* Ensure correct font */
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.competitive-ready .element-2 {
+  width: 312px;
+  top: 363px;
+  left: 68px;
+  -webkit-text-stroke: 0px #000000;
+  color: #000;
+  font-size: 57px;
+  position: absolute;
+  font-family: 'Noto Sans Thai', sans-serif; /* Ensure correct font */
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.competitive-ready .option-icon {
+  position: absolute;
+  width: 108px;
+  height: 108px;
+  top: 24px;
+  left: 1788px;
+  background-image: url(https://c.animaapp.com/s1cugEKd/img/image-3@2x.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.competitive-ready .thai-language-icon {
+  position: absolute;
+  width: 108px;
+  height: 108px;
+  top: 26px;
+  left: 1677px;
+  background-image: url(https://c.animaapp.com/s1cugEKd/img/image-2@2x.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.competitive-ready .back-home-icon {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 30px;
+  left: 1570px;
+  background-image: url(https://c.animaapp.com/s1cugEKd/img/image-1@2x.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.competitive-ready .element-3 {
+  position: absolute;
+  width: 460px;
+  height: 620px;
+  top: 290px;
+  left: 310px;
+}
+
+.competitive-ready .element-4 {
+  width: 302px;
+  top: 363px;
+  left: 73px;
+  -webkit-text-stroke: 0px #000000;
+  color: #000;
+  font-size: 57px;
+  position: absolute;
+  font-family: 'Noto Sans Thai', sans-serif; /* Ensure correct font */
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.competitive-ready .text-wrapper-5 {
+  width: 217px;
+  top: 453px;
+  left: 115px;
+  -webkit-text-stroke: 0px #2b0000;
+  color: #ff5959;
+  font-size: 57px;
+  position: absolute;
+  font-family: 'Noto Sans Thai', sans-serif; /* Ensure correct font */
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.competitive-ready .text-wrapper-6 {
+  width: 285px;
+  top: 543px;
+  left: 81px;
+  -webkit-text-stroke: 0px #990000;
+  color: #000;
+  font-size: 57px;
+  position: absolute;
+  font-family: 'Noto Sans Thai', sans-serif; /* Ensure correct font */
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.competitive-ready .previous {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 30px;
+  left: 1460px;
+  background-image: url(https://c.animaapp.com/s1cugEKd/img/previous@2x.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+/* Shared hover styles */
+.hover-effect {
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation for scaling and shadow */
+  border-radius: 10px; /* Add rounded corners similar to the box */
+}
+
+.hover-effect:hover {
+  transform: scale(1.05); /* Slightly increase size on hover */
+  background-color: #ffcc00;
+}
+
+/* Center text inside elements */
+.element .text-wrapper-3,
+.element-3 .text-wrapper-6 {
+
+  align-items: center; /* Vertically center text */
+  text-align: center; /* Center text alignment */
+}
+
+/* Animation for grow and shrink effect */
+@keyframes grow-shrink {
+  0%, 100% {
+    transform: scale(1); /* Normal size */
+  }
+  50% {
+    transform: scale(1.1); /* Slightly larger size */
+  }
+}
+
+.grow-shrink {
+  animation: grow-shrink 1s infinite; /* Apply animation with infinite repeat */
+}
+
