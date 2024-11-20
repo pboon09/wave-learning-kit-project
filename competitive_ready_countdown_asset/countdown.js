@@ -18,7 +18,7 @@ function updateCountdown() {
 
 // Redirect to the next page after the countdown
 function redirectToNextPage() {
-  window.location.href = "next_page.html"; // Replace with your target page
+  window.location.href = "competitive_mode.html"; // Replace with your target page
 }
 
 // Start the countdown
