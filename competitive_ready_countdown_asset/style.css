@@ -1,0 +1,83 @@
+.competitive {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.competitive .competitive-ready {
+  background-color: #ffffff;
+  width: 1920px;
+  height: 1080px;
+  position: relative;
+  display: flex; /* Center elements inside competitive-ready */
+  justify-content: center; /* Horizontally center */
+  align-items: center; /* Vertically center */
+}
+
+.competitive .back-home-icon {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 30px;
+  left: 1570px;
+  background-image: url(https://c.animaapp.com/4rKvEh7a/img/image-1@2x.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.competitive .option-icon {
+  position: absolute;
+  width: 108px;
+  height: 108px;
+  top: 24px;
+  left: 1788px;
+  background-image: url(https://c.animaapp.com/4rKvEh7a/img/image-3@2x.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.competitive .thai-language-icon {
+  position: absolute;
+  width: 108px;
+  height: 108px;
+  top: 26px;
+  left: 1676px;
+  background-image: url(https://c.animaapp.com/4rKvEh7a/img/image-2@2x.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.competitive .previous {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 30px;
+  left: 1460px;
+  background-image: url(https://c.animaapp.com/4rKvEh7a/img/previous@2x.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.competitive .element {
+  position: absolute;
+  width: 184px;
+  height: 592px;
+  top: 244px;
+  left: 868px;
+  display: flex; /* Use flexbox for centering */
+  justify-content: center; /* Horizontally center text */
+  align-items: center; /* Vertically center text */
+}
+
+.competitive .text-wrapper {
+  font-family: "Londrina Solid", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 500px; /* Keep large size for visibility */
+  text-align: center; /* Ensure text alignment is centered */
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
