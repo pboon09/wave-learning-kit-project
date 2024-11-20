@@ -18,7 +18,7 @@ function markReady(playerElement, textSelector) {
 function checkBothReady() {
   if (player1Ready && player2Ready) {
     setTimeout(() => {
-      window.location.href = "countdown.html"; // Redirect to countdown.html after 2 seconds
+      window.location.href = "competitive_ready_countdown.html"; // Redirect to countdown.html after 2 seconds
     }, 2000);
   }
 }
