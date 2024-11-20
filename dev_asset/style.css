@@ -1,0 +1,85 @@
+.dev {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.dev .div {
+  background-color: #ffffff;
+  width: 1920px;
+  height: 1080px;
+  position: relative;
+}
+
+.dev .text-wrapper {
+  position: absolute;
+  width: 1209px;
+  height: 160px;
+  top: 453px;
+  left: 350px;
+  -webkit-text-stroke: 6px #000000;
+  font-family: 'Noto Sans Thai', sans-serif; /* Ensure correct font */
+  font-weight: 600;
+  color: #000000;
+  font-size: 128px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.dev .option-icon {
+  position: absolute;
+  width: 108px;
+  height: 108px;
+  top: 24px;
+  left: 1788px;
+  background-image: url(https://c.animaapp.com/SPlVHFir/img/option-icon@2x.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.dev .thai-language-icon {
+  position: absolute;
+  width: 108px;
+  height: 108px;
+  top: 26px;
+  left: 1677px;
+  background-image: url(https://c.animaapp.com/SPlVHFir/img/thai-language-icon@2x.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.dev .back-home-icon {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 32px;
+  left: 1570px;
+  background-image: url(https://c.animaapp.com/SPlVHFir/img/back-home-icon@2x.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.dev .previous {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 32px;
+  left: 1460px;
+  background-image: url(https://c.animaapp.com/SPlVHFir/img/previous@2x.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+/* Shared hover styles */
+.hover-effect {
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation for scaling and shadow */
+  border-radius: 10px; /* Add rounded corners similar to the box */
+}
+
+.hover-effect:hover {
+  transform: scale(1.05); /* Slightly increase size on hover */
+  background-color: #ffcc00;
+}
