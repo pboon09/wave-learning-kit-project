@@ -14,8 +14,10 @@ if (isNaN(currentHoverIndex_dev)) {
   currentHoverIndex_dev = -1;
 }
 
-let prev_hoverstep = 0;
-let prev_button = null;
+let prev_counter = parseInt(localStorage.getItem("prev_counter"), 10);
+if (isNaN(prev_counter)) {
+  prev_counter = 0;
+}
 
 function applyHover(index) {
   boxes.forEach((box) => box.classList.remove("hover"));
@@ -35,10 +37,13 @@ async function fetchData() {
 
     const hoverStep = data.data[0];
     const button = data.data[1];
+    const counter = data.counter;
 
-    if (hoverStep === 1 && prev_hoverstep === 0) {
+    console.log("prev_counter:", prev_counter, "counter:", counter);
+
+    if (hoverStep === 1 && prev_counter !== counter) {
       currentHoverIndex_dev++;
-    } else if (hoverStep === -1 && prev_hoverstep === 0) {
+    } else if (hoverStep === -1 && prev_counter !== counter) {
       currentHoverIndex_dev--;
     }
 
@@ -49,24 +54,23 @@ async function fetchData() {
       currentHoverIndex_dev = boxes.length - 1;
     }
 
-    prev_hoverstep = hoverStep;
-
     applyHover(currentHoverIndex_dev);
 
     console.log("currentHoverIndex_dev:", currentHoverIndex_dev);
 
     localStorage.setItem("currentHoverIndex_dev", currentHoverIndex_dev);
 
-    if (button === 0 && prev_button !== 0) {
+    if (button === 0 && prev_counter !== counter) {
       const urlIndex = currentHoverIndex_dev;
-      currentHoverIndex_dev = -1;
       if (urlIndex >= 0 && urlIndex < urls.length) {
         const targetUrl = urls[urlIndex];
-        prev_button = button;
         console.log(`Navigating to ${targetUrl}`);
         window.location.href = targetUrl;
       }
     }
+
+    prev_counter = counter;
+    localStorage.setItem("prev_counter", counter);
 
   } catch (error) {
     console.error("Error fetching or processing JSON data:", error);
