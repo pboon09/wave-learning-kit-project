@@ -5,10 +5,13 @@ arduino_port = "COM7"
 baud_rate = 9600
 
 default_data = [0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0]
+counter = 0
 
 json_data = {
-    "data": default_data
+    "data": default_data,
+    "counter": counter
 }
+
 with open("input.json", 'w') as json_file:
     json.dump(json_data, json_file, indent=1)
 
@@ -23,13 +26,18 @@ try:
                 data = list(map(int, raw_data.split()))
                 
                 if data != default_data:
+                    counter += 1
+                    
                     json_data = {
-                        "data": data
+                        "data": data,
+                        "counter": counter
                     }
+                    
                     with open("input.json", 'w') as json_file:
                         json.dump(json_data, json_file, indent=1)
                     
                     print("New Data:", data)
+                    print("Update Count:", counter)
             except ValueError:
                 print("Error parsing incoming data:", raw_data)
 except Exception as e:
