@@ -231,10 +231,10 @@
 }
 
 .hover-effect {
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation for scaling and shadow */
-  border-radius: 10px; /* Add rounded corners similar to the box */
+  transition: transform 0.3s ease;
+  border-radius: 10px;
 }
 
-.hover-effect:hover {
-  transform: scale(1.15); /* Slightly increase size on hover */
+.hover {
+  transform: scale(1.15);
 }
