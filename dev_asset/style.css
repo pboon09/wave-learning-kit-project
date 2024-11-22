@@ -101,7 +101,7 @@
   border-radius: 10px; /* Add rounded corners similar to the box */
 }
 
-.hover-effect:hover {
+.hover {
   transform: scale(1.05); /* Slightly increase size on hover */
   background-color: #ffcc00;
 }
