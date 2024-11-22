@@ -152,7 +152,7 @@
   line-height: normal;
 }
 
-.competitive-ready .option-icon {
+/* .competitive-ready .option-icon {
   position: absolute;
   width: 108px;
   height: 108px;
@@ -183,7 +183,7 @@
   background-image: url(https://c.animaapp.com/s1cugEKd/img/image-1@2x.png);
   background-size: cover;
   background-position: 50% 50%;
-}
+} */
 
 .competitive-ready .element-3 {
   position: absolute;
@@ -235,13 +235,35 @@
   line-height: normal;
 }
 
-.competitive-ready .previous {
+/* .competitive-ready .previous {
   position: absolute;
   width: 100px;
   height: 100px;
   top: 30px;
   left: 1460px;
   background-image: url(https://c.animaapp.com/s1cugEKd/img/previous@2x.png);
+  background-size: cover;
+  background-position: 50% 50%;
+} */
+
+.competitive-ready .back-home-icon {
+  position: absolute;
+  width: 108px;
+  height: 108px;
+  top: 24px;
+  left: 1788px;
+  background-image: url(https://c.animaapp.com/SPlVHFir/img/back-home-icon@2x.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.competitive-ready .previous {
+  position: absolute;
+  width: 108px;
+  height: 108px;
+  top: 26px;
+  left: 1677px;
+  background-image: url(https://c.animaapp.com/SPlVHFir/img/previous@2x.png);
   background-size: cover;
   background-position: 50% 50%;
 }

@@ -182,7 +182,7 @@
     object-fit: cover;
   }
   
-  .home-page .back-home-icon {
+  /* .home-page .back-home-icon {
     position: absolute;
     width: 100px;
     height: 100px;
@@ -213,7 +213,7 @@
     background-image: url(https://c.animaapp.com/9a5NSbPb/img/option-icon@2x.png);
     background-size: cover;
     background-position: 50% 50%;
-  }
+  } */
 
 .box {
   border-radius: 15; 

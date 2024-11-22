@@ -243,7 +243,7 @@
   );
 }
 
-.option-page .back-home-icon {
+/* .option-page .back-home-icon {
   position: absolute;
   width: 100px;
   height: 100px;
@@ -283,6 +283,28 @@
   top: 30px;
   left: 1460px;
   background-image: url(https://c.animaapp.com/B7dOcxyl/img/previous@2x.png);
+  background-size: cover;
+  background-position: 50% 50%;
+} */
+
+.option-page .back-home-icon {
+  position: absolute;
+  width: 108px;
+  height: 108px;
+  top: 24px;
+  left: 1788px;
+  background-image: url(https://c.animaapp.com/SPlVHFir/img/back-home-icon@2x.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.option-page .previous {
+  position: absolute;
+  width: 108px;
+  height: 108px;
+  top: 26px;
+  left: 1677px;
+  background-image: url(https://c.animaapp.com/SPlVHFir/img/previous@2x.png);
   background-size: cover;
   background-position: 50% 50%;
 }
