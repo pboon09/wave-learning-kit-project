@@ -412,22 +412,22 @@
 
 /* Shared hover styles */
 .hover-effect {
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation for scaling and shadow */
+  transition: transform 0.3s ease; /* Smooth animation for scaling and shadow */
   border-radius: 10px; /* Add rounded corners similar to the box */
 }
 
-.hover-effect:hover {
+.hover {
   transform: scale(1.05); /* Slightly increase size on hover */
   background-color: #ffcc00;
 }
 
 .hover-effect-box {
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation for scaling and shadow */
+  transition: transform 0.3s ease; /* Smooth animation for scaling and shadow */
   border-radius: 10px; /* Add rounded corners similar to the box */
 }
 
-.hover-effect-box:hover {
-  transform: scale(1.25); /* Slightly increase size on hover */
+.hover-b {
+  transform: scale(1.5); /* Slightly increase size on hover */
 }
 
 /* Specific styles for individual elements */
