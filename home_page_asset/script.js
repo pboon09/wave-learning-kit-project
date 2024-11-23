@@ -24,6 +24,7 @@ localStorage.removeItem("currentNumber");
 localStorage.removeItem("currentTime");
 
 localStorage.removeItem("indexQuestion");
+localStorage.removeItem("QuestionCount");
 localStorage.removeItem("user1_score");
 
 let currentHoverIndex = parseInt(localStorage.getItem("currentHoverIndex"), 10);

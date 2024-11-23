@@ -11,7 +11,10 @@ let frequency1 = parseFloat(localStorage.getItem("frequency1")) || 1;
 let prev_counter = parseInt(localStorage.getItem("prev_counter"), 10) || 0;
 
 let indexQuestion = parseInt(localStorage.getItem("indexQuestion"), 10) || 0;
+let QuestionCount = parseInt(localStorage.getItem("QuestionCount"), 10) || 0;
 let user1_score = parseInt(localStorage.getItem("user1_score"), 10) || 0;
+
+let maxQuestion = parseInt(localStorage.getItem("currentNumber"));
 
 // Fixed black wave parameters from questions.json
 let QuestionAmplitude = 1;
@@ -72,7 +75,7 @@ async function fetchData() {
 
     // console.log("prev_counter:", prev_counter, "counter:", counter);
     // console.log("amp:", amplitude1, "freq:", frequency1.toFixed(1), "period:", period1.toFixed(3));
-    console.log(user1_score, indexQuestion + 1);
+    console.log(user1_score, indexQuestion + 1, maxQuestion, QuestionCount);
 
     if (amp1 === 1 && prev_counter !== counter) {
       amplitude1++;
@@ -128,12 +131,17 @@ async function fetchData() {
       if(QuestionAmplitude == amplitude1 && QuestionFrequency == frequency1.toFixed(1)){
         user1_score++;
       }
-      indexQuestion++;
+      indexQuestion = Math.floor(Math.random() * 200);
+      QuestionCount++;
+      if(QuestionCount >= maxQuestion){
+        window.location.href = "competitive_result.html";
+      }
     }
 
     prev_counter = counter;
     localStorage.setItem("prev_counter", counter);
     localStorage.setItem("indexQuestion", indexQuestion);
+    localStorage.setItem("QuestionCount", QuestionCount);
     localStorage.setItem("user1_score", user1_score);
 
   } catch (error) {

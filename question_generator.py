@@ -40,7 +40,7 @@ def generate_questions(
     return questions
 
 settings = {
-    "num_questions": 20,
+    "num_questions": 200,
     "amplitude_range": (1, 8),
     "amplitude_step": 1,
     "frequency_range": (0.5, 4),
