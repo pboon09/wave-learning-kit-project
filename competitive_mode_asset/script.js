@@ -87,4 +87,4 @@ document.addEventListener('DOMContentLoaded', () => {
   drawSineWaveGraph('sine-wave-canvas', amplitude1, frequency1);
 });
 
-setInterval(fetchData, 500);
+setInterval(fetchData, 100);

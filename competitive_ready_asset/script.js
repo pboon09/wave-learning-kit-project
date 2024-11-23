@@ -85,4 +85,4 @@ async function fetchData() {
 
 applyHover(currentHoverIndex_compt_read);
 fetchData();
-setInterval(fetchData, 500);
+setInterval(fetchData, 100);

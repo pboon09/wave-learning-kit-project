@@ -94,4 +94,4 @@ async function fetchData() {
 
 applyHover(currentHoverIndex_option);
 fetchData();
-setInterval(fetchData, 500);
+setInterval(fetchData, 100);
