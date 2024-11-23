@@ -20,6 +20,7 @@ localStorage.removeItem("currentHoverIndex");
 localStorage.removeItem("currentHoverIndex_compt_read");
 localStorage.setItem("player1Status", "none");
 localStorage.setItem("player2Status", "none");
+
 let currentHoverIndex_option = parseInt(localStorage.getItem("currentHoverIndex_option"), 10);
 if (isNaN(currentHoverIndex_option)) {
   currentHoverIndex_option = -1;
@@ -28,6 +29,54 @@ if (isNaN(currentHoverIndex_option)) {
 let prev_counter = parseInt(localStorage.getItem("prev_counter"), 10);
 if (isNaN(prev_counter)) {
   prev_counter = 0;
+}
+
+const defaultNumber = 15;
+const defaultTime = 15;
+
+let currentNumber = parseInt(localStorage.getItem("currentNumber"), 10) || defaultNumber;
+let currentTime = parseInt(localStorage.getItem("currentTime"), 10) || defaultTime;
+
+function updateDisplay() {
+  document.querySelector(".overlap-2 .text-wrapper-3").textContent = currentNumber;
+  document.querySelector(".overlap-3 .text-wrapper-3").textContent = currentTime;
+
+  localStorage.setItem("currentNumber", currentNumber);
+  localStorage.setItem("currentTime", currentTime);
+}
+
+function incrementNumber() {
+  currentNumber++;
+  updateDisplay();
+}
+
+function decrementNumber() {
+  if (currentNumber > 0) {
+    currentNumber--;
+    updateDisplay();
+  }
+}
+
+function resetNumber() {
+  currentNumber = defaultNumber;
+  updateDisplay();
+}
+
+function incrementTime() {
+  currentTime++;
+  updateDisplay();
+}
+
+function decrementTime() {
+  if (currentTime > 0) {
+    currentTime--;
+    updateDisplay();
+  }
+}
+
+function resetTime() {
+  currentTime = defaultTime;
+  updateDisplay();
 }
 
 function applyHover(index) {
@@ -76,11 +125,36 @@ async function fetchData() {
     localStorage.setItem("currentHoverIndex_option", currentHoverIndex_option);
 
     if (button === 0 && prev_counter !== counter) {
-      const urlIndex = currentHoverIndex_option - 6;
-      if (urlIndex >= 0 && urlIndex < urls.length) {
-        const targetUrl = urls[urlIndex];
-        console.log(`Navigating to ${targetUrl}`);
-        window.location.href = targetUrl;
+      switch (currentHoverIndex_option) {
+        case 0:
+          incrementNumber();
+          break;
+        case 1:
+          decrementNumber();
+          break;
+        case 2:
+          resetNumber();
+          break;
+        case 3:
+          incrementTime();
+          break;
+        case 4:
+          decrementTime();
+          break;
+        case 5:
+          resetTime();
+          break;
+        case 6:
+          window.location.href = urls[0];
+          break;
+        case 7:
+          window.location.href = urls[1];
+          break;
+        case 8:
+          window.location.href = urls[2];
+          break;
+        default:
+          break;
       }
     }
 
@@ -92,6 +166,9 @@ async function fetchData() {
   }
 }
 
+updateDisplay();
+
 applyHover(currentHoverIndex_option);
+
 fetchData();
 setInterval(fetchData, 100);

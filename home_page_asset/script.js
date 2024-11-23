@@ -18,6 +18,8 @@ localStorage.removeItem("currentHoverIndex_compt_read");
 localStorage.removeItem("amplitude1");
 localStorage.removeItem("period1");
 localStorage.removeItem("frequency1");
+localStorage.removeItem("currentNumber");
+localStorage.removeItem("currentTime");
 let currentHoverIndex = parseInt(localStorage.getItem("currentHoverIndex"), 10);
 if (isNaN(currentHoverIndex)) {
   currentHoverIndex = -1;
