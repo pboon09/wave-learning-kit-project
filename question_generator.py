@@ -63,4 +63,18 @@ output_file = "questions.json"
 with open(output_file, "w") as file:
     json.dump({"questions": questions}, file, indent=4)
 
-print(f"{settings['num_questions']} questions have been saved to '{output_file}'.")
+random_ans = generate_questions(
+    num_questions=settings["num_questions"],
+    amplitude_range=settings["amplitude_range"],
+    amplitude_step=settings["amplitude_step"],
+    frequency_range=settings["frequency_range"],
+    frequency_step=settings["frequency_step"],
+    period_range=settings["period_range"],
+    period_step=settings["period_step"]
+)
+
+output_file = "random_ans.json"
+with open(output_file, "w") as file:
+    json.dump({"random_ans": random_ans}, file, indent=4)
+
+print(f"Done.")
