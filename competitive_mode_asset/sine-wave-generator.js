@@ -1,4 +1,4 @@
-export function drawSineWaveGraph(canvasId, amplitude, frequency) {
+export function drawSineWaveGraph(canvasId, ...waves) {
   const canvas = document.getElementById(canvasId);
   if (!canvas) {
     console.error(`Canvas with id "${canvasId}" not found.`);
@@ -91,10 +91,10 @@ export function drawSineWaveGraph(canvasId, amplitude, frequency) {
     ctx.fillText("y(m)", marginLeft - 20, marginTop - 20); // Y-axis title
   }
 
-  // Function to draw sine wave
-  function drawSineWave() {
+  // Function to draw a single sine wave
+  function drawSineWave(amplitude, frequency, color) {
     ctx.beginPath();
-    ctx.strokeStyle = "black"; // Keep sine wave color as black
+    ctx.strokeStyle = color;
     ctx.lineWidth = 2;
 
     const midY = (canvasHeight - marginBottom) / 2;
@@ -113,13 +113,17 @@ export function drawSineWaveGraph(canvasId, amplitude, frequency) {
     ctx.stroke();
   }
 
-  // Clear canvas and draw
+  // Clear canvas and draw everything
   function render() {
     ctx.clearRect(0, 0, canvasWidth, canvasHeight); // Clear canvas
     drawGrid(); // Draw grid
     drawAxes(); // Draw axes with arrows
     drawLabels(); // Draw axis labels and titles
-    drawSineWave(); // Draw sine wave
+
+    // Draw all sine waves
+    for (const wave of waves) {
+      drawSineWave(wave.amplitude, wave.frequency, wave.color);
+    }
   }
 
   // Render everything
