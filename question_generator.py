@@ -33,7 +33,7 @@ def generate_questions(
 
         questions.append({
             "amplitude": amplitude,
-            "frequency": round(frequency, 2),
+            "frequency": round(frequency, 1),
             "period": round(period, 3)
         })
 
