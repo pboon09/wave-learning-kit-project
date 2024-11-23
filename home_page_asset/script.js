@@ -20,6 +20,7 @@ localStorage.removeItem("amplitude1");
 localStorage.removeItem("period1");
 localStorage.removeItem("frequency1");
 localStorage.removeItem("indexQuestion1");
+localStorage.removeItem("last_indexQuestion1");
 localStorage.removeItem("QuestionCount1");
 localStorage.removeItem("user1_score");
 localStorage.removeItem("user1_status");

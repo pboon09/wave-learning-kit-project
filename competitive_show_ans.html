@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="competitive_mode_asset//globals.css" />
+    <link rel="stylesheet" href="competitive_mode_asset/styleguide.css" />
+    <link rel="stylesheet" href="competitive_mode_asset/style.css" />
+    <script src="https://cdn.jsdelivr.net/pyodide/v0.23.4/full/pyodide.js"></script>
+  </head>
+  <body>
+    <div class="competitive-play">
+      <div class="div">
+        <!-- <div class="option-icon"></div>
+        <div class="back-home-icon"></div>
+        <div class="thai-language-icon"></div>
+        <div class="previous"></div> -->
+        <div class="view">
+          <div class="overlap-group"><div class="text-wrapper">ทีมสีแดง</div></div>
+        </div>
+        <div class="overlap-wrapper">
+          <div class="overlap"><div class="text-wrapper-2">ทีมสีน้ำเงิน</div></div>
+        </div>
+        <div class="display-bar">
+          <div class="overlap-2">
+            <div class="period-display">
+              <div class="period-name-wrapper"><div class="text-wrapper-3">T =</div></div>
+              <div id="period-val" class="period-val">0</div>
+            </div>
+            <div class="rectangle"></div>
+            <div class="rectangle-2"></div>
+          </div>
+          <!-- <div class="overlap-3">
+            <div class="vel-display">
+              <div class="vel-name-wrapper"><div class="text-wrapper-3">v =</div></div>
+              <div class="vel-val">0</div>
+            </div>
+            <div class="div-2"></div>
+            <div class="div-3"></div>
+          </div> -->
+          <div class="amplitude-display">
+            <div class="amplitude-display-2">
+              <div class="amplitude-name-wrapper"><div class="text-wrapper-3">A =</div></div>
+              <div id="amplitude-val" class="amplitude-val">0</div>
+            </div>
+            <div class="div-2"></div>
+            <div class="div-3"></div>
+          </div>
+          <!-- <div class="lambda-display">
+            <div class="div-2"></div>
+            <div class="div-4"></div>
+            <div class="lambda-display-2">
+              <div class="group">
+                <div class="lambda-display-wrapper">
+                  <div class="lambda-name-wrapper"><div class="text-wrapper-3">=</div></div>
+                </div>
+                <div class="text-wrapper-4">0</div>
+              </div>
+              <div class="lambda-display-3"></div>
+            </div>
+          </div> -->
+          <div class="f-display">
+            <div class="f-display-2">
+              <div class="f-name-wrapper"><div class="text-wrapper-3">f =</div></div>
+              <div id="f-val" class="f-val">0</div>
+            </div>
+            <div class="div-2"></div>
+            <div class="div-4"></div>
+          </div>
+        </div>
+        <div class="overlap-4">
+          <div class="overlap-group-wrapper">
+            <div class="overlap-5">
+              <div class="enter-button"></div>
+              <div class="sign-icon">
+                <img class="rotate-icon" src="https://c.animaapp.com/cFUc2F07/img/rotate-icon@2x.png" />
+                <img class="push-icon" src="https://c.animaapp.com/cFUc2F07/img/push-icon@2x.png" />
+              </div>
+              <div class="text-wrapper-5">ยืนยัน</div>
+            </div>
+          </div>
+          <div class="div-wrapper">
+            <div class="overlap-6">
+              <div class="enter-button-2"></div>
+              <div class="rotate-icon-wrapper">
+                <img class="img" src="https://c.animaapp.com/cFUc2F07/img/rotate-icon-1@2x.png" />
+              </div>
+              <div class="text-wrapper-6">แอมพลิจูด</div>
+            </div>
+          </div>
+          <div class="overlap-7">
+            <div class="view-2">
+              <div class="overlap-8">
+                <div class="enter-button-3"></div>
+                <div class="img-wrapper">
+                  <img class="rotate-icon-2" src="https://c.animaapp.com/cFUc2F07/img/rotate-icon-2@2x.png" />
+                </div>
+                <div class="text-wrapper-7">ความถี่</div>
+              </div>
+            </div>
+            <!-- <div class="view-3">
+              <div class="overlap-9">
+                <div class="enter-button-4"></div>
+                <div class="sign-icon-2">
+                  <img class="rotate-icon-3" src="https://c.animaapp.com/cFUc2F07/img/rotate-icon-4@2x.png" />
+                </div>
+                <div class="text-wrapper-8">คาบ</div>
+              </div>
+            </div> -->
+            <div class="view-3">
+              <div class="overlap-9">
+                <div class="enter-button-4"></div>
+                <div class="sign-icon-2">
+                  <img class="rotate-icon-3" src="https://c.animaapp.com/cFUc2F07/img/rotate-icon-4@2x.png" />
+                </div>
+                <div class="text-wrapper-8">คาบ</div>
+              </div>
+            </div>
+            <!-- <div class="view-4">
+              <div class="overlap-10">
+                <div class="enter-button-5"></div>
+                <div class="sign-icon-3">
+                  <img class="rotate-icon-3" src="https://c.animaapp.com/cFUc2F07/img/rotate-icon-5@2x.png" />
+                </div>
+                <div class="text-wrapper-9">อัตราเร็วคลื่น</div>
+              </div>
+            </div> -->
+            <div class="graph-line">
+              <canvas id="sine-wave-canvas" width="1740" height="800"></canvas>
+            </div>            
+          </div>
+          <!-- <div class="view-5">
+            <div class="overlap-12">
+              <div class="enter-button-6"></div>
+              <div class="sign-icon-4">
+                <img class="img" src="https://c.animaapp.com/cFUc2F07/img/rotate-icon-3@2x.png" />
+              </div>
+              <div class="text-wrapper-10">ความยาวคลื่น</div>
+            </div> -->
+          </div>
+        </div>
+        <!-- <div class="ellipse"></div> -->
+      </div>
+    </div>
+    <script type="module"  src="competitive_mode_asset/sine-wave-generator.js"></script>
+    <script type="module" src="competitive_mode_asset/show_ans.js"></script>
+  </body>
+</html>

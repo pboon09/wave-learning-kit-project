@@ -9,6 +9,7 @@ let amplitude1 = parseInt(localStorage.getItem("amplitude1"), 10) || 0;
 let period1 = parseFloat(localStorage.getItem("period1")) || 1;
 let frequency1 = parseFloat(localStorage.getItem("frequency1")) || 1;
 let indexQuestion1 = parseInt(localStorage.getItem("indexQuestion1"), 10) || 0;
+let last_indexQuestion1 = parseInt(localStorage.getItem("last_indexQuestion1"), 10) || 0;
 let QuestionCount1 = parseInt(localStorage.getItem("QuestionCount1"), 10) || 1;
 let user1_score = parseInt(localStorage.getItem("user1_score"), 10) || 0;
 
@@ -74,7 +75,7 @@ async function fetchData() {
 
     // console.log("prev_counter:", prev_counter, "counter:", counter);
     // console.log("amp:", amplitude1, "freq:", frequency1.toFixed(1), "period:", period1.toFixed(3));
-    console.log(user1_score, indexQuestion1, maxQuestion, QuestionCount1 + 1);
+    console.log(user1_score, indexQuestion1, maxQuestion, QuestionCount1);
 
     if (amp1 === 1 && prev_counter !== counter) {
       amplitude1++;
@@ -130,17 +131,20 @@ async function fetchData() {
       if(QuestionAmplitude == amplitude1 && QuestionFrequency == frequency1.toFixed(1)){
         user1_score++;
       }
+      last_indexQuestion1 = indexQuestion1;
       indexQuestion1 = Math.floor(Math.random() * 200);
       QuestionCount1++;
-      if(QuestionCount1 >= maxQuestion){
-        localStorage.setItem("user1_status", "done");
-        window.location.href = "competitive_result.html";
-      }
+      // if(QuestionCount1 > maxQuestion){
+      //   localStorage.setItem("user1_status", "done");
+      //   window.location.href = "competitive_result.html";
+      // }
+      window.location.href = "competitive_show_ans.html";
     }
 
     prev_counter = counter;
     localStorage.setItem("prev_counter", counter);
     localStorage.setItem("indexQuestion1", indexQuestion1);
+    localStorage.setItem("last_indexQuestion1", last_indexQuestion1);
     localStorage.setItem("QuestionCount1", QuestionCount1);
     localStorage.setItem("user1_score", user1_score);
 
@@ -155,8 +159,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   await fetchAns();
   drawSineWaveGraph(
     'sine-wave-canvas',
-    { amplitude: QuestionAmplitude, frequency: QuestionFrequency, color: "black" },
-    { amplitude: UserAmplitude, frequency: UserFrequency, color: "red" }
+    { amplitude: QuestionAmplitude, frequency: QuestionFrequency, color: "black" }
   );
 });
 
