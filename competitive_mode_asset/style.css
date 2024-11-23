@@ -97,7 +97,7 @@
   width: 162px;
   height: 71px;
   top: 45px;
-  left: 1172px;
+  left: 910px;
 }
 
 .competitive-play .overlap {
@@ -129,7 +129,7 @@
 
 .competitive-play .display-bar {
   position: absolute;
-  width: 908px;
+  width: 640px;
   height: 90px;
   top: 35px;
   left: 232px;
@@ -144,10 +144,10 @@
 
 .competitive-play .overlap-2 {
   position: absolute;
-  width: 167px;
+  width: 220px;
   height: 75px;
   top: 8px;
-  left: 549px;
+  left: 410px;
   background-color: #b0b0b0;
   border-radius: 8px;
   border: 1px solid;
@@ -211,7 +211,7 @@
   width: 24px;
   height: 14px;
   top: 56px;
-  left: 139px;
+  left: 190px;
   background-color: #ed0000;
   border-radius: 10px;
 }
@@ -335,7 +335,7 @@
   width: 24px;
   height: 14px;
   top: 56px;
-  left: 137px;
+  left: 157px;
   background-color: #ed0000;
   border-radius: 10px;
 }
@@ -397,10 +397,10 @@
 
 .competitive-play .f-display {
   position: absolute;
-  width: 167px;
+  width: 185px;
   height: 75px;
   top: 8px;
-  left: 370px;
+  left: 200px;
   background-color: #b0b0b0;
   border-radius: 8px;
   border: 1px solid;
@@ -747,7 +747,7 @@
 
 .competitive-play .graph-line {
   position: absolute;
-  width: 1741px;
+  width: 1740px;
   height: 800px;
   top: 0;
   left: 0;
