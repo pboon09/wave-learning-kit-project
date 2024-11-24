@@ -19,11 +19,18 @@ localStorage.removeItem("currentHoverIndex_compt_read");
 localStorage.removeItem("amplitude1");
 localStorage.removeItem("period1");
 localStorage.removeItem("frequency1");
-localStorage.removeItem("indexQuestion1");
-localStorage.removeItem("last_indexQuestion1");
-localStorage.removeItem("QuestionCount1");
 localStorage.removeItem("user1_score");
 localStorage.removeItem("user1_status");
+
+localStorage.removeItem("amplitude2");
+localStorage.removeItem("period2");
+localStorage.removeItem("frequency2");
+localStorage.removeItem("user2_score");
+localStorage.removeItem("user2_status");
+
+localStorage.removeItem("indexQuestion");
+localStorage.removeItem("last_indexQuestion");
+localStorage.removeItem("QuestionCount");
 
 localStorage.removeItem("currentNumber");
 localStorage.removeItem("currentTime");

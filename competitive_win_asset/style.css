@@ -1,9 +1,10 @@
 .competitive-end {
   background-color: rgba(255, 255, 255, 1);
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  justify-content: center; /* Centers .div horizontally */
+  align-items: center;    /* Centers .div vertically */
   width: 100%;
+  height: 100vh;          /* Makes the container take up the full viewport height */
 }
 
 .competitive-end .div {
@@ -11,13 +12,12 @@
   width: 1920px;
   height: 1080px;
   position: relative;
+  display: flex;          /* Enables flexbox for internal alignment */
+  justify-content: center; /* Centers .text-wrapper horizontally */
+  align-items: center;    /* Centers .text-wrapper vertically */
 }
 
 .competitive-end .text-wrapper {
-  position: absolute;
-  height: 592px;
-  top: 243px;
-  left: 240px;
   font-family: "Londrina Solid", Helvetica;
   font-weight: 400;
   color: #ffffff;
@@ -27,6 +27,7 @@
   line-height: normal;
   white-space: nowrap;
 }
+
 
 .competitive-end .back-home-icon {
   position: absolute;
@@ -63,5 +64,13 @@
     90deg,
     rgba(56.64, 213.89, 234.41, 0.91) 0%,
     rgb(0, 84.05, 144.09) 100%
+  );
+}
+
+.tie {
+  background: linear-gradient(
+    90deg,
+    rgba(231, 234, 57, 0.91) 0%,
+    rgb(255, 187, 0) 100%
   );
 }

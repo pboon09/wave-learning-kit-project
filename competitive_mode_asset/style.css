@@ -97,7 +97,7 @@
   width: 162px;
   height: 71px;
   top: 45px;
-  left: 910px;
+  left: 1040px;
 }
 
 .competitive-play .overlap {
@@ -140,6 +140,25 @@
     rgb(52.44, 52.41, 52.41) 18.87%,
     rgb(1.98, 1.91, 1.91) 100%
   );
+}
+
+.competitive-play .display-bar-2 {
+  position: absolute;
+  width: 640px;
+  height: 90px;
+  top: 35px;
+  left: 1235px;
+  border-radius: 10px;
+  background: linear-gradient(
+    180deg,
+    rgb(96.95, 96.95, 96.95) 0%,
+    rgb(52.44, 52.41, 52.41) 18.87%,
+    rgb(1.98, 1.91, 1.91) 100%
+  );
+}
+
+.ans {
+  background: rgb(69, 255, 69) !important;
 }
 
 .competitive-play .overlap-2 {

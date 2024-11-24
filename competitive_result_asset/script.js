@@ -1,15 +1,9 @@
-localStorage.removeItem("amplitude1");
-localStorage.removeItem("period1");
-localStorage.removeItem("frequency1");
-localStorage.removeItem("indexQuestion1");
-localStorage.removeItem("QuestionCount1");
-
-let maxQuestion = parseInt(localStorage.getItem("currentNumber"));
-let user1_score = parseInt(localStorage.getItem("user1_score"));
-let user1_status = localStorage.getItem("user1_status");
+let maxQuestion = localStorage.getItem("currentNumber")
+let user1_score = localStorage.getItem("user1_score");
+let user2_score = localStorage.getItem("user2_score");
 
 async function fetchData(){
-  console.log(maxQuestion, user1_score, user1_status);
+  console.log(maxQuestion, user1_score, user2_score);
   const total_question = document.getElementById("total-question");
   if (total_question) {
     total_question.textContent = maxQuestion;
@@ -22,14 +16,19 @@ async function fetchData(){
   
   const blue_score = document.getElementById("blue-score");
   if (blue_score) {
-    blue_score.textContent = 14;
+    blue_score.textContent = user2_score;
   }
 
-  if(user1_status == "done") {
-    setTimeout(() => {
+  setTimeout(() => {
+    if(user1_score > user2_score){
       window.location.href = "competitive_win_red.html";
-    }, 5000);
-  }
+    } else if(user1_score < user2_score){
+      window.location.href = "competitive_win_blue.html";
+    }
+    else{
+      window.location.href = "competitive_win_tie.html";
+    }
+  }, 5000);
 }
 
 setInterval(fetchData, 100);
