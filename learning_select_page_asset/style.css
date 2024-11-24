@@ -1,0 +1,285 @@
+.learning-select-page {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.learning-select-page .div {
+  background-color: #ffffff;
+  width: 1920px;
+  height: 1080px;
+  position: relative;
+}
+
+.learning-select-page .view {
+  left: 465px;
+  background: linear-gradient(
+    180deg,
+    rgb(0, 158.01, 178.62) 0%,
+    rgba(34.41, 188.91, 209.06, 0.89) 13.87%,
+    rgba(85.58, 234.86, 254.33, 0.72) 66.67%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  position: absolute;
+  width: 310px;
+  height: 720px;
+  top: 240px;
+  border-radius: 20px;
+}
+
+.learning-select-page .text-wrapper {
+  width: 181px;
+  left: 65px;
+  position: absolute;
+  top: 33px;
+  -webkit-text-stroke: 0px #000000;
+  font-family: 'Noto Sans Thai', sans-serif;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 40px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.learning-select-page .img {
+  top: 110px;
+  left: 25px;
+  position: absolute;
+  width: 260px;
+  height: 260px;
+  object-fit: cover;
+}
+
+.learning-select-page .view-2 {
+  left: 122px;
+  background: linear-gradient(
+    180deg,
+    rgb(0, 158.01, 178.62) 0%,
+    rgba(26.48, 181.79, 202.05, 0.91) 8.87%,
+    rgba(85.58, 234.86, 254.33, 0.72) 59.37%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  position: absolute;
+  width: 310px;
+  height: 720px;
+  top: 240px;
+  border-radius: 20px;
+}
+
+.learning-select-page .text-wrapper-2 {
+  width: 290px;
+  left: 18px;
+  position: absolute;
+  top: 33px;
+  -webkit-text-stroke: 0px #000000;
+  font-family: 'Noto Sans Thai', sans-serif;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 40px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+/* .learning-select-page .previous {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 32px;
+  left: 1460px;
+  background-image: url(https://c.animaapp.com/lcr1kV7m/img/previous@2x.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.learning-select-page .back-home-icon {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 32px;
+  left: 1570px;
+  background-image: url(https://c.animaapp.com/lcr1kV7m/img/back-home-icon@2x.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.learning-select-page .option-icon {
+  position: absolute;
+  width: 108px;
+  height: 108px;
+  top: 24px;
+  left: 1788px;
+  background-image: url(https://c.animaapp.com/lcr1kV7m/img/option-icon@2x.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.learning-select-page .thai-language-icon {
+  position: absolute;
+  width: 108px;
+  height: 108px;
+  top: 26px;
+  left: 1677px;
+  background-image: url(https://c.animaapp.com/lcr1kV7m/img/thai-language-icon@2x.png);
+  background-size: cover;
+  background-position: 50% 50%;
+} */
+
+.learning-select-page .back-home-icon {
+  position: absolute;
+  width: 108px;
+  height: 108px;
+  top: 24px;
+  left: 1788px;
+  background-image: url(https://c.animaapp.com/lcr1kV7m/img/back-home-icon@2x.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.learning-select-page .previous {
+  position: absolute;
+  width: 108px;
+  height: 108px;
+  top: 26px;
+  left: 1677px;
+  background-image: url(https://c.animaapp.com/lcr1kV7m/img/previous@2x.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.learning-select-page .view-3 {
+  left: 805px;
+  background: linear-gradient(
+    180deg,
+    rgb(0, 158.01, 178.62) 0%,
+    rgba(19.99, 175.97, 196.31, 0.93) 7.37%,
+    rgba(85.58, 234.86, 254.33, 0.72) 59.37%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  position: absolute;
+  width: 310px;
+  height: 720px;
+  top: 240px;
+  border-radius: 20px;
+}
+
+.learning-select-page .text-wrapper-3 {
+  width: 157px;
+  left: 80px;
+  position: absolute;
+  top: 33px;
+  -webkit-text-stroke: 0px #000000;
+  font-family: 'Noto Sans Thai', sans-serif;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 40px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.learning-select-page .icon {
+  top: 116px;
+  left: 25px;
+  position: absolute;
+  width: 260px;
+  height: 260px;
+  object-fit: cover;
+}
+
+.learning-select-page .view-4 {
+  left: 1145px;
+  background: linear-gradient(
+    180deg,
+    rgb(0, 158.01, 178.62) 0%,
+    rgba(30.08, 185.03, 205.24, 0.9) 6.87%,
+    rgba(85.58, 234.86, 254.33, 0.72) 59.37%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  position: absolute;
+  width: 310px;
+  height: 720px;
+  top: 240px;
+  border-radius: 20px;
+}
+
+.learning-select-page .text-wrapper-4 {
+  width: 239px;
+  left: 40px;
+  position: absolute;
+  top: 33px;
+  -webkit-text-stroke: 0px #000000;
+  font-family: 'Noto Sans Thai', sans-serif;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 40px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.learning-select-page .icon-2 {
+  top: 118px;
+  left: 25px;
+  position: absolute;
+  width: 260px;
+  height: 260px;
+  object-fit: cover;
+}
+
+.learning-select-page .view-5 {
+  left: 1487px;
+  background: linear-gradient(
+    180deg,
+    rgb(0, 158.01, 178.62) 0%,
+    rgba(17.83, 174.02, 194.4, 0.94) 6.37%,
+    rgba(85.58, 234.86, 254.33, 0.72) 59.37%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  position: absolute;
+  width: 310px;
+  height: 720px;
+  top: 240px;
+  border-radius: 20px;
+}
+
+.learning-select-page .text-wrapper-5 {
+  width: 239px;
+  left: 50px;
+  position: absolute;
+  top: 33px;
+  -webkit-text-stroke: 0px #000000;
+  font-family: 'Noto Sans Thai', sans-serif;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 40px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.learning-select-page .icon-3 {
+  top: 121px;
+  left: 26px;
+  position: absolute;
+  width: 260px;
+  height: 260px;
+  object-fit: cover;
+}
+
+.hover-effect-box {
+  transition: transform 0.3s ease;
+  border-radius: 10px;
+}
+
+.hover-b {
+  transform: scale(1.15);
+}
+
+.hover-effect {
+  transition: transform 0.3s ease;
+  border-radius: 10px;
+}
+
+.hover {
+  transform: scale(1.05);
+  background-color: #ffcc00;
+}
