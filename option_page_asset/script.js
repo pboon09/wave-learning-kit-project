@@ -54,6 +54,17 @@ function updateDisplay() {
   localStorage.setItem("currentTime", currentTime);
 }
 
+function incrementNumber() {
+  currentNumber++;
+  updateDisplay();
+}
+
+function decrementNumber() {
+  if (currentNumber > 0) {
+    currentNumber--;
+    updateDisplay();
+  }
+}
 
 function incrementTime() {
   if (currentTime < 60) {

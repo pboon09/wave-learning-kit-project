@@ -17,15 +17,32 @@ let user2_score = parseInt(localStorage.getItem("user2_score"), 10) || 0;
 let user1_status = localStorage.getItem("user1_status") || "none";
 let user2_status = localStorage.getItem("user2_status") || "none";
 
-let indexQuestion = parseInt(localStorage.getItem("indexQuestion"), 10) || 0;
+let indexQuestion = parseInt(localStorage.getItem("indexQuestion"), 10) || Math.floor(Math.random() * 200);
 let last_indexQuestion = parseInt(localStorage.getItem("last_indexQuestion"), 10) || 0;
 let QuestionCount = parseInt(localStorage.getItem("QuestionCount"), 10) || 1;
 
 let maxQuestion = parseInt(localStorage.getItem("currentNumber"));
+let default_time = parseInt(localStorage.getItem("currentTime"));
+let time_limit = parseInt(localStorage.getItem("time_limit"),10) || default_time;
 let prev_counter = parseInt(localStorage.getItem("prev_counter"), 10) || 0;
 
 let QuestionAmplitude = 1;
 let QuestionFrequency = 1;
+
+let countdownInterval;
+
+function startCountdown() {
+  clearInterval(countdownInterval);
+  countdownInterval = setInterval(() => {
+    if (time_limit > 0) {
+      time_limit--;
+      localStorage.setItem("time_limit", time_limit);
+    }
+    else if (time_limit <= 0){
+      clearInterval(countdownInterval);
+    }
+  }, 1000);
+}
 
 function snapToStep(value, step) {
   return Math.round(value / step) * step;
@@ -70,7 +87,7 @@ async function fetchData() {
     // console.log("prev_counter:", prev_counter, "counter:", counter);
     // console.log("amp:", amplitude1, "freq:", frequency1.toFixed(1), "period:", period1.toFixed(3));
 
-    console.log(user1_score, user2_score, indexQuestion, maxQuestion, QuestionCount, user1_status, user2_status);
+    console.log(user1_score, user2_score, indexQuestion, maxQuestion, QuestionCount, user1_status, user2_status, time_limit);
 
     if (amp1 === 1 && prev_counter !== counter) {
       amplitude1++;
@@ -210,7 +227,7 @@ async function fetchData() {
       document.getElementById("display-bar-2").classList.remove("ans");
     }
 
-    if(user1_status == "wait" && user2_status == "wait"){
+    if((user1_status == "wait" && user2_status == "wait") || time_limit <= 0){
       last_indexQuestion = indexQuestion;
       indexQuestion = Math.floor(Math.random() * 200);
       QuestionCount++;
@@ -238,6 +255,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     'sine-wave-canvas',
     { amplitude: QuestionAmplitude, frequency: QuestionFrequency, color: "black" }
   );
+  startCountdown();
 });
 
 setInterval(fetchData, 100);

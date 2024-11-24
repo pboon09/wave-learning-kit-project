@@ -34,8 +34,7 @@ localStorage.removeItem("QuestionCount");
 
 localStorage.removeItem("currentNumber");
 localStorage.removeItem("currentTime");
-
-
+localStorage.removeItem('time_limit');
 
 let currentHoverIndex = parseInt(localStorage.getItem("currentHoverIndex"), 10);
 if (isNaN(currentHoverIndex)) {
