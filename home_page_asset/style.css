@@ -16,7 +16,9 @@
   .home-page .box {
     width: 430px;
     left: 200px;
-    background-image: url(https://c.animaapp.com/9a5NSbPb/img/---------------.svg);
+    /* background-image: url(https://c.animaapp.com/9a5NSbPb/img/---------------.svg); */
+    background: linear-gradient(180deg, #2ECFE4 0%, #17656F 93%);
+    border-radius: 20px;
     position: absolute;
     height: 600px;
     top: 240px;
@@ -50,7 +52,9 @@
   .home-page .box-2 {
     width: 425px;
     left: 1290px;
-    background-image: url(https://c.animaapp.com/9a5NSbPb/img/----------------1.svg);
+    /* background-image: ul(https://c.animaapp.com/9a5NSbPb/img/----------------1.svg); */
+    background: linear-gradient(180deg, #FFCA39 0%, #D78100 100%);
+    border-radius: 20px;
     position: absolute;
     height: 600px;
     top: 240px;
@@ -151,7 +155,9 @@
   .home-page .box-3 {
     width: 430px;
     left: 745px;
-    background-image: url(https://c.animaapp.com/9a5NSbPb/img/--------------.svg);
+    /* background-image: url(https://c.animaapp.com/9a5NSbPb/img/--------------.svg); */
+    background: linear-gradient(180deg, #FF4C4F 0%, #560C0D 93%);
+    border-radius: 20px;
     position: absolute;
     height: 600px;
     top: 240px;

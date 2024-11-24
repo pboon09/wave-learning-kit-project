@@ -1,6 +1,8 @@
 import { drawSineWaveGraph } from './sine-wave-generator.js';
 
 localStorage.removeItem('time_limit');
+localStorage.removeItem('user1_status');
+localStorage.removeItem('user2_status');
 
 let amplitude1 = localStorage.getItem("amplitude1");
 let frequency1 = localStorage.getItem("frequency1");

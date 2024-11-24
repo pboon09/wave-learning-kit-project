@@ -19,7 +19,7 @@
   height: 108px;
   top: 24px;
   left: 1788px;
-  background-image: url(https://c.animaapp.com/cFUc2F07/img/image-3@2x.png);
+  background-image: url("icon\option.png");
   background-size: cover;
   background-position: 50% 50%;
 }
@@ -30,7 +30,7 @@
   height: 100px;
   top: 30px;
   left: 1570px;
-  background-image: url(https://c.animaapp.com/cFUc2F07/img/image-1@2x.png);
+  background-image: url("icon\back_home.png");
   background-size: cover;
   background-position: 50% 50%;
 }
@@ -41,7 +41,7 @@
   height: 108px;
   top: 27px;
   left: 1676px;
-  background-image: url(https://c.animaapp.com/cFUc2F07/img/image-2@2x.png);
+  background-image: url("icon\lang.png");
   background-size: cover;
   background-position: 50% 50%;
 }
@@ -52,7 +52,7 @@
   height: 100px;
   top: 32px;
   left: 1460px;
-  background-image: url(https://c.animaapp.com/cFUc2F07/img/previous@2x.png);
+  background-image: url("icon\prev.png");
   background-size: cover;
   background-position: 50% 50%;
 }
@@ -441,7 +441,7 @@
   height: 30px;
   top: 9px;
   left: 0;
-  background-image: url(https://c.animaapp.com/cFUc2F07/img/lambda@2x.png);
+  /* background-image: url(https://c.animaapp.com/cFUc2F07/img/lambda@2x.png); */
   background-size: cover;
   background-position: 50% 50%;
 }
@@ -962,7 +962,7 @@
   width: 30px;
   height: 800px;
   left: -5px;
-  background-image: url(https://c.animaapp.com/cFUc2F07/img/horizontal-1.svg);
+  /* background-image: url(https://c.animaapp.com/cFUc2F07/img/horizontal-1.svg); */
   background-size: 100% 100%;
 }
 
