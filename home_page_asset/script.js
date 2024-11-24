@@ -5,7 +5,7 @@ const boxes = [
 ];
 
 const urls = [
-  "dev.html",
+  "learning_select_page.html",
   "option_page.html",
   "dev.html",
 ];
@@ -15,6 +15,7 @@ localStorage.setItem("player2Status", "none");
 localStorage.removeItem("currentHoverIndex_option");
 localStorage.removeItem("currentHoverIndex_dev");
 localStorage.removeItem("currentHoverIndex_compt_read");
+localStorage.removeItem("currentHoverIndex_Learning_Select");
 
 localStorage.removeItem("amplitude1");
 localStorage.removeItem("period1");
