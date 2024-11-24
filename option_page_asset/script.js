@@ -32,52 +32,55 @@ if (isNaN(prev_counter)) {
 }
 
 const defaultNumber = 15;
-const defaultTime = 15;
+const defaultTime = 60; // Default time in seconds (1 minute)
 
 let currentNumber = parseInt(localStorage.getItem("currentNumber"), 10) || defaultNumber;
 let currentTime = parseInt(localStorage.getItem("currentTime"), 10) || defaultTime;
 
 function updateDisplay() {
-  document.querySelector(".overlap-2 .text-wrapper-3").textContent = currentNumber;
-  document.querySelector(".overlap-3 .text-wrapper-3").textContent = currentTime;
+  const timeDisplay = document.querySelector(".overlap-3 .text-wrapper-3");
+  const timeUnit = document.getElementById("time");
 
+  if (currentTime < 60) {
+    timeDisplay.textContent = currentTime;
+    timeUnit.textContent = "วินาที";
+  } else {
+    timeDisplay.textContent = Math.floor(currentTime / 60);
+    timeUnit.textContent = "นาที";
+  }
+
+  document.querySelector(".overlap-2 .text-wrapper-3").textContent = currentNumber;
   localStorage.setItem("currentNumber", currentNumber);
   localStorage.setItem("currentTime", currentTime);
 }
 
-function incrementNumber() {
-  currentNumber++;
-  updateDisplay();
-}
-
-function decrementNumber() {
-  if (currentNumber > 0) {
-    currentNumber--;
-    updateDisplay();
-  }
-}
-
-function resetNumber() {
-  currentNumber = defaultNumber;
-  updateDisplay();
-}
 
 function incrementTime() {
-  currentTime++;
+  if (currentTime < 60) {
+    currentTime += 10;
+  } else {
+    currentTime += 60;
+  }
   updateDisplay();
 }
 
 function decrementTime() {
-  if (currentTime > 0) {
-    currentTime--;
-    updateDisplay();
+  if (currentTime <= 60 && currentTime > 10) {
+    currentTime -= 10;
+  } else if (currentTime > 60) {
+    currentTime -= 60;
+  } else if (currentTime <= 10) {
+    currentTime = 10;
   }
+  updateDisplay();
 }
+
 
 function resetTime() {
   currentTime = defaultTime;
   updateDisplay();
 }
+
 
 function applyHover(index) {
   boxes.forEach((box) => box.classList.remove("hover", "hover-b"));
