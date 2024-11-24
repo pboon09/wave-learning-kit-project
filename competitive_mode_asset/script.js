@@ -37,6 +37,19 @@ function startCountdown() {
     if (time_limit > 0) {
       time_limit--;
       localStorage.setItem("time_limit", time_limit);
+      document.getElementById("display-bar-3").textContent = time_limit + " วินาที";
+      if (time_limit <= 10) {
+        document.getElementById("display-bar-3").classList.add("red");
+      } else {
+        document.getElementById("display-bar-3").classList.remove("red");
+      }
+      
+      if (time_limit <= default_time / 2) {
+        document.getElementById("display-bar-3").classList.add("yellow");
+      } else {
+        document.getElementById("display-bar-3").classList.remove("yellow");
+      }
+      
     }
     else if (time_limit <= 0){
       clearInterval(countdownInterval);
@@ -89,28 +102,28 @@ async function fetchData() {
 
     console.log(user1_score, user2_score, indexQuestion, maxQuestion, QuestionCount, user1_status, user2_status, time_limit);
 
-    if (amp1 === 1 && prev_counter !== counter) {
+    if (amp1 === 1 && prev_counter !== counter && user1_status != "wait") {
       amplitude1++;
-    } else if (amp1 === -1 && prev_counter !== counter) {
+    } else if (amp1 === -1 && prev_counter !== counter && user1_status != "wait") {
       amplitude1--;
     }
     amplitude1 = Math.max(0, Math.min(8, amplitude1));
 
-    if (ped1 === 1 && prev_counter !== counter) {
+    if (ped1 === 1 && prev_counter !== counter && user1_status != "wait") {
       period1 += 0.125;
       period1 = Math.max(0.25, Math.min(1, snapToStep(period1, 0.125)));
       frequency1 = 1 / period1;
-    } else if (ped1 === -1 && prev_counter !== counter) {
+    } else if (ped1 === -1 && prev_counter !== counter && user1_status != "wait") {
       period1 -= 0.125;
       period1 = Math.max(0.25, Math.min(1, snapToStep(period1, 0.125)));
       frequency1 = 1 / period1;
     }
 
-    if (fre1 === 1 && prev_counter !== counter) {
+    if (fre1 === 1 && prev_counter !== counter && user1_status != "wait") {
       frequency1 += 0.5;
       frequency1 = Math.max(0.5, Math.min(4, snapToStep(frequency1, 0.5)));
       period1 = 1 / frequency1;
-    } else if (fre1 === -1 && prev_counter !== counter) {
+    } else if (fre1 === -1 && prev_counter !== counter && user1_status != "wait") {
       frequency1 -= 0.5;
       frequency1 = Math.max(0.5, Math.min(4, snapToStep(frequency1, 0.5)));
       period1 = 1 / frequency1;
@@ -122,28 +135,28 @@ async function fetchData() {
 
     ///////////
 
-    if (amp2 === 1 && prev_counter !== counter) {
+    if (amp2 === 1 && prev_counter !== counter && user2_status != "wait") {
       amplitude2++;
-    } else if (amp2 === -1 && prev_counter !== counter) {
+    } else if (amp2 === -1 && prev_counter !== counter && user2_status != "wait") {
       amplitude2--;
     }
     amplitude2 = Math.max(0, Math.min(8, amplitude2));
 
-    if (ped2 === 1 && prev_counter !== counter) {
+    if (ped2 === 1 && prev_counter !== counter && user2_status != "wait") {
       period2 += 0.125;
       period2 = Math.max(0.25, Math.min(1, snapToStep(period2, 0.125)));
       frequency2 = 1 / period2;
-    } else if (ped2 === -1 && prev_counter !== counter) {
+    } else if (ped2 === -1 && prev_counter !== counter && user2_status != "wait") {
       period2 -= 0.125;
       period2 = Math.max(0.25, Math.min(1, snapToStep(period2, 0.125)));
       frequency2 = 1 / period2;
     }
 
-    if (fre2 === 1 && prev_counter !== counter) {
+    if (fre2 === 1 && prev_counter !== counter && user2_status != "wait") {
       frequency2 += 0.5;
       frequency2 = Math.max(0.5, Math.min(4, snapToStep(frequency2, 0.5)));
       period2 = 1 / frequency2;
-    } else if (fre2 === -1 && prev_counter !== counter) {
+    } else if (fre2 === -1 && prev_counter !== counter && user2_status != "wait") {
       frequency2 -= 0.5;
       frequency2 = Math.max(0.5, Math.min(4, snapToStep(frequency2, 0.5)));
       period2 = 1 / frequency2;
@@ -258,4 +271,5 @@ document.addEventListener('DOMContentLoaded', async () => {
   startCountdown();
 });
 
+startCountdown()
 setInterval(fetchData, 100);

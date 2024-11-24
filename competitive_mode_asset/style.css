@@ -161,6 +161,38 @@
   background: rgb(69, 255, 69) !important;
 }
 
+.competitive-play .display-bar-3 {
+  position: absolute;
+  width: 300px;
+  height: 90px;
+  top: 961px;
+  left: 1580px;
+  border-radius: 10px;
+  background: linear-gradient(
+    180deg,
+    rgb(96.95, 96.95, 96.95) 0%,
+    rgb(52.44, 52.41, 52.41) 18.87%,
+    rgb(1.98, 1.91, 1.91) 100%
+  );
+  color: white; /* Make the text white */
+  display: flex; /* Center the text vertically and horizontally */
+  justify-content: center;
+  align-items: center;
+  font-size: 50px; /* Adjust text size as needed */
+  font-weight: bold; /* Optional: make the text bold */
+  font-family: 'Noto Sans Thai', sans-serif;
+}
+
+.yellow {
+  background: rgb(255, 187, 0) !important;
+}
+
+.red {
+  background: rgb(255, 0, 0) !important;
+}
+
+
+
 .competitive-play .overlap-2 {
   position: absolute;
   width: 220px;
