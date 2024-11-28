@@ -24,11 +24,16 @@ let velocity1 = parseInt(localStorage.getItem("velocity1"), 10) || 1;
 
 let prev_counter = parseInt(localStorage.getItem("prev_counter"), 10) || 0;
 
-let QuestionAmplitude = 1;
-let QuestionFrequency = 1;
-
 function snapToStep(value, step) {
   return Math.round(value / step) * step;
+}
+
+function applyHover(index) {
+  boxes.forEach((box) => box.classList.remove("hover"));
+
+  if (index >= 0 && index < boxes.length) {
+    boxes[index].classList.add("hover");
+  }
 }
 
 // Function to fetch user input data
@@ -40,12 +45,26 @@ async function fetchData() {
     }
     const data = await response.json();
 
+    const hoverStep = data.data[0];
     const amp1 = data.data[2];
     const fre1 = data.data[4];
     const ped1 = data.data[5];
     const vel1 = data.data[7];
     const button1 = data.data[1];
     const counter = data.counter;
+
+    if (hoverStep === 1 && prev_counter !== counter) {
+      currentHoverIndex_Anatomy++;
+    } else if (hoverStep === -1 && prev_counter !== counter) {
+      currentHoverIndex_Anatomy--;
+    }
+
+    if (currentHoverIndex_Anatomy >= boxes.length) {
+      currentHoverIndex_Anatomy = -1;
+    }
+    if (currentHoverIndex_Anatomy < -1) {
+      currentHoverIndex_Anatomy = boxes.length - 1;
+    }
 
     if (amp1 === 1 && prev_counter !== counter) {
       amplitude1++;
@@ -113,6 +132,7 @@ async function fetchData() {
         window.location.href = targetUrl;
       }
     }
+    applyHover(currentHoverIndex);
 
     prev_counter = counter;
     localStorage.setItem("prev_counter", counter);
@@ -129,4 +149,5 @@ document.addEventListener('DOMContentLoaded', async () => {
   );
 });
 
+applyHover(currentHoverIndex);
 setInterval(fetchData, 100);
