@@ -16,10 +16,12 @@ localStorage.removeItem("currentHoverIndex_option");
 localStorage.removeItem("currentHoverIndex_dev");
 localStorage.removeItem("currentHoverIndex_compt_read");
 localStorage.removeItem("currentHoverIndex_Learning_Select");
+localStorage.removeItem("currentHoverIndex_Anatomy");
 
 localStorage.removeItem("amplitude1");
 localStorage.removeItem("period1");
 localStorage.removeItem("frequency1");
+localStorage.removeItem("velocity1");
 localStorage.removeItem("user1_score");
 localStorage.removeItem("user1_status");
 

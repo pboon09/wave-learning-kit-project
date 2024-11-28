@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="competitive_mode_asset//globals.css" />
-    <link rel="stylesheet" href="competitive_mode_asset/styleguide.css" />
-    <link rel="stylesheet" href="competitive_mode_asset/style.css" />
+    <link rel="stylesheet" href="learning_anatopmy_asset/globals.css" />
+    <link rel="stylesheet" href="learning_anatopmy_asset/styleguide.css" />
+    <link rel="stylesheet" href="learning_anatopmy_asset/style.css" />
     <script src="https://cdn.jsdelivr.net/pyodide/v0.23.4/full/pyodide.js"></script>
   </head>
   <body>
@@ -14,12 +14,12 @@
         <div class="back-home-icon"></div>
         <div class="thai-language-icon"></div>
         <div class="previous"></div> -->
-        <div class="view">
+        <!-- <div class="view">
           <div class="overlap-group"><div class="text-wrapper">ทีมสีแดง</div></div>
-        </div>
-        <div class="overlap-wrapper">
+        </div> -->
+        <!-- <div class="overlap-wrapper">
           <div class="overlap"><div class="text-wrapper-2">ทีมสีน้ำเงิน</div></div>
-        </div>
+        </div> -->
         <div id="display-bar" class="display-bar">
           <div class="overlap-2">
             <div class="period-display">
@@ -29,14 +29,14 @@
             <div class="rectangle"></div>
             <div class="rectangle-2"></div>
           </div>
-          <!-- <div class="overlap-3">
+          <div class="overlap-3">
             <div class="vel-display">
               <div class="vel-name-wrapper"><div class="text-wrapper-3">v =</div></div>
-              <div class="vel-val">0</div>
+              <div id="vel-red" class="vel-val">0</div>
             </div>
             <div class="div-2"></div>
             <div class="div-3"></div>
-          </div> -->
+          </div>
           <div class="amplitude-display">
             <div class="amplitude-display-2">
               <div class="amplitude-name-wrapper"><div class="text-wrapper-3">A =</div></div>
@@ -68,7 +68,7 @@
           </div>
         </div>
 
-        <div id="display-bar-2" class="display-bar-2">
+        <!-- <div id="display-bar-2" class="display-bar-2">
           <div class="f-display">
             <div class="f-display-2">
               <div class="f-name-wrapper"><div class="text-wrapper-3">f =</div></div>
@@ -93,15 +93,15 @@
             <div class="rectangle"></div>
             <div class="rectangle-2"></div>
           </div>
-        </div>
+        </div> -->
 
         <div class="overlap-4">
           <div class="overlap-group-wrapper">
             <div class="overlap-5">
               <div class="enter-button"></div>
               <div class="sign-icon">
-                <img class="rotate-icon" src="https://c.animaapp.com/cFUc2F07/img/rotate-icon@2x.png" />
-                <img class="push-icon" src="https://c.animaapp.com/cFUc2F07/img/push-icon@2x.png" />
+                <img class="rotate-icon" src="icon/rotate.png" />
+                <img class="push-icon" src="icon/push.png" />
               </div>
               <div class="text-wrapper-5">ยืนยัน</div>
             </div>
@@ -110,7 +110,7 @@
             <div class="overlap-6">
               <div class="enter-button-2"></div>
               <div class="rotate-icon-wrapper">
-                <img class="img" src="https://c.animaapp.com/cFUc2F07/img/rotate-icon-1@2x.png" />
+                <img class="img" src="icon/rotate.png" />
               </div>
               <div class="text-wrapper-6">แอมพลิจูด</div>
             </div>
@@ -120,7 +120,7 @@
               <div class="overlap-8">
                 <div class="enter-button-3"></div>
                 <div class="img-wrapper">
-                  <img class="rotate-icon-2" src="https://c.animaapp.com/cFUc2F07/img/rotate-icon-2@2x.png" />
+                  <img class="rotate-icon-2" src="icon/rotate.png" />
                 </div>
                 <div class="text-wrapper-7">ความถี่</div>
               </div>
@@ -138,20 +138,20 @@
               <div class="overlap-9">
                 <div class="enter-button-4"></div>
                 <div class="sign-icon-2">
-                  <img class="rotate-icon-3" src="https://c.animaapp.com/cFUc2F07/img/rotate-icon-4@2x.png" />
+                  <img class="rotate-icon-3" src="icon/rotate.png" />
                 </div>
                 <div class="text-wrapper-8">คาบ</div>
               </div>
             </div>
-            <!-- <div class="view-4">
+            <div class="view-4">
               <div class="overlap-10">
                 <div class="enter-button-5"></div>
                 <div class="sign-icon-3">
-                  <img class="rotate-icon-3" src="https://c.animaapp.com/cFUc2F07/img/rotate-icon-5@2x.png" />
+                  <img class="rotate-icon-3" src="icon/rotate.png" />
                 </div>
                 <div class="text-wrapper-9">อัตราเร็วคลื่น</div>
               </div>
-            </div> -->
+            </div>
             <div class="graph-line">
               <canvas id="sine-wave-canvas" width="1740" height="800"></canvas>
             </div>            
@@ -167,9 +167,15 @@
           </div>
         </div>
         <!-- <div class="ellipse"></div> -->
+        <a href="home_page.html">
+          <img id="home" class="back-home-icon hover-effect" src="icon/back_home.png">
+        </a>
+        <a href="learning_select_page.html">
+            <img id="back"class="previous hover-effect" src="icon/prev.png">
+        </a>  
       </div>
     </div>
-    <!-- <script type="module"  src="competitive_mode_asset/sine-wave-generator.js"></script>
-    <script type="module" src="competitive_mode_asset/script.js"></script> -->
+    <script type="module"  src="learning_anatopmy_asset/sine-wave-generator.js"></script>
+    <script type="module" src="learning_anatopmy_asset/script.js"></script>
   </body>
 </html>
