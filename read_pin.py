@@ -1,7 +1,7 @@
 import serial
 import json
 
-arduino_port = "COM7"
+arduino_port = "/dev/ttyACM0"
 baud_rate = 9600
 
 default_data = [0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0]
