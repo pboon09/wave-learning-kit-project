@@ -27,7 +27,7 @@ def main():
     esc_thread = threading.Thread(target=listen_for_escape, args=(window,), daemon=True)
     esc_thread.start()
 
-    webview.start()
+    webview.start(debug=True)
 
 if __name__ == '__main__':
     main()

@@ -14,8 +14,9 @@
 }
 
 .dev .text-wrapper {
-  width: 1000px;
-  height: 2000px;
+  position: absolute;
+  width: 1209px;
+  height: 160px;
   top: 453px;
   left: 350px;
   -webkit-text-stroke: 6px #000000;
@@ -27,7 +28,6 @@
   letter-spacing: 0;
   line-height: normal;
 }
-
 
 /* .dev .option-icon {
   position: absolute;
@@ -53,7 +53,7 @@
 
 .dev .back-home-icon {
   position: absolute;
-  width: 2000px;
+  width: 108px;
   height: 108px;
   top: 24px;
   left: 1788px;

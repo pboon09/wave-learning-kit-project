@@ -132,7 +132,7 @@ async function fetchData() {
         window.location.href = targetUrl;
       }
     }
-    applyHover(currentHoverIndex);
+    applyHover(currentHoverIndex_Anatomy);
 
     prev_counter = counter;
     localStorage.setItem("prev_counter", counter);
@@ -149,5 +149,5 @@ document.addEventListener('DOMContentLoaded', async () => {
   );
 });
 
-applyHover(currentHoverIndex);
+applyHover(currentHoverIndex_Anatomy);
 setInterval(fetchData, 100);
